@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentClick"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.unilever.julia.components.ButtonIconRound
+        android:id="@+id/buttonIconRound"
+        android:layout_width="@dimen/button_round_icon_width"
+        android:layout_height="@dimen/button_round_icon_height"
+        android:layout_marginStart="@dimen/margin_start_24dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        app:btIcRoundBgColor="@color/colorGray"
+        app:btIcRoundTextSize="@dimen/button_round_icon_size"
+        app:julTextViewIcon="AGENDA"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCommodity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/_hc"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonIconRound"
+        app:layout_constraintEnd_toStartOf="@+id/buttonArrow"
+        app:layout_constraintStart_toEndOf="@+id/buttonIconRound"
+        app:layout_constraintTop_toTopOf="@+id/buttonIconRound" />
+
+    <include
+        layout="@layout/button_arrow_right"
+        android:id="@+id/buttonArrow"
+        android:layout_width="@dimen/bt_arrow_right_size"
+        android:layout_height="@dimen/bt_arrow_right_size"
+        android:layout_marginEnd="@dimen/margin_end_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_separator_height"
+        android:background="@color/colorStrokeGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorChatBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <com.unilever.julia.components.LoadView
+            android:id="@+id/loadView"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <include layout="@layout/innovation_projects_content"
+             android:id="@+id/loadContent"
+             android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+</LinearLayout>

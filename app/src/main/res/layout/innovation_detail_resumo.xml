@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <include layout="@layout/innovation_detail_resumo_content"/>
+
+        <com.unilever.julia.components.innovations.InnovationTradestory
+            android:id="@+id/contentTradestory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.unilever.julia.components.innovations.InnovationsMidias
+            android:id="@+id/contentMidias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.unilever.julia.components.innovations.InnovationBeneficio
+            android:id="@+id/contentBeneficio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:innoBen_title="@string/beneficio_esperado"
+            app:innoBen_description="@string/loren_text"
+            app:innoBen_isTopStroke="true"/>
+
+        <com.unilever.julia.components.innovations.InnovationDescription
+            android:id="@+id/contentPublicoAlvo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:innoDesc_title="@string/publico_alvo"
+            app:innoDesc_description="@string/loren_text"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

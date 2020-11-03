@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <com.unilever.julia.components.LoadView
+        android:visibility="gone"
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.unilever.julia.components.IpvManagementHeader
+        android:id="@+id/ipvManagementHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/EditTextFont.Filter"
+        android:id="@+id/editTextSearch"
+        android:background="@drawable/edittext_chat_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height_44dp"
+        android:layout_marginTop="@dimen/margin_top_24dp"
+        android:layout_marginStart="@dimen/margin_start_24dp"
+        android:layout_marginEnd="@dimen/margin_end_24dp"
+        android:hint="@string/buscar_clientes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top_24dp"
+        tools:listitem="@layout/ipv_management_holder"/>
+
+</LinearLayout>

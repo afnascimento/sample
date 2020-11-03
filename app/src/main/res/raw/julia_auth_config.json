@@ -1,0 +1,14 @@
+{
+  "client_id" : "",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msal://auth",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADandPersonalMicrosoftAccount",
+        "tenant_id": "common"
+      }
+    }
+  ]
+}

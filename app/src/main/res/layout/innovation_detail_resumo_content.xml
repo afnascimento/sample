@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorChatBg">
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/tvIconLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextCinza"
+            app:julTextViewIcon="AGENDA"
+            android:layout_marginTop="@dimen/innovation_v2_margin_top_24dp"
+            android:layout_marginStart="@dimen/innovation_v2_margin_start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:id="@+id/tvLeftTitle"
+            android:text="@string/vendas_em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/tvIconLeft"
+            android:layout_marginStart="14dp"
+            app:layout_constraintTop_toTopOf="@+id/tvIconLeft"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIconLeft"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLeftDescription"
+            style="@style/InovacaoCardTextCinza.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/innovation_v2_margin_bottom_24dp"
+            android:text="@string/data_lancamento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvLeftTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvLeftTitle" />
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/tvRightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextCinza"
+            app:julTextViewIcon="REGRAS_OURO"
+            app:layout_constraintStart_toEndOf="@+id/tvLeftTitle"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/InovacaoCardTextCinza.Bold"
+        android:id="@+id/tvRightTitle"
+        android:text="@string/canal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/tvRightIcon"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRightIcon"
+        app:layout_constraintTop_toTopOf="@+id/tvRightIcon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRightValue"
+        style="@style/InovacaoCardTextCinza.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="@dimen/innovation_v2_margin_bottom_24dp"
+        android:text="@string/todos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvRightTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvRightTitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

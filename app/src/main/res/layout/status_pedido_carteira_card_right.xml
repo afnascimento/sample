@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/topIconValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/statusPedidoCarteiraLabelGray"
+            app:julTextViewIcon="VALOR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text2"
+            android:id="@+id/tvValorTotalPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/total_valor_pedido"
+            app:layout_constraintStart_toEndOf="@+id/topIconValor"
+            app:layout_constraintTop_toTopOf="@+id/topIconValor"
+            app:layout_constraintBottom_toBottomOf="@+id/topIconValor"/>
+
+    <com.unilever.julia.ui.component.ProgressCard
+            android:id="@+id/progressValueOrders"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/status_ped_carteira_progress_height"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topIconValor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:pgCardPercent1="11.07"
+            app:pgCardColorHex1="#78BE20"
+            app:pgCardPercent2="80.07"
+            app:pgCardColorHex2="#F0B331"
+            app:pgCardPercent3="9.2"
+            app:pgCardColorHex3="#DA2C27"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/topIconBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textColor="@color/statusPedidoCarteiraLabelGray"
+            app:julTextViewIcon="CAIXA"
+            app:layout_constraintTop_toBottomOf="@+id/progressValueOrders"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text2"
+            android:id="@+id/tvTotalCaixas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/total_caixas"
+            app:layout_constraintStart_toEndOf="@+id/topIconBox"
+            app:layout_constraintTop_toTopOf="@+id/topIconBox"
+            app:layout_constraintBottom_toBottomOf="@+id/topIconBox"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text3"
+            android:id="@+id/tvCaixas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caixas"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalCaixas"
+            app:layout_constraintStart_toEndOf="@+id/tvTotalCaixas"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTotalCaixas"/>
+
+    <com.unilever.julia.ui.component.ProgressCard
+            android:id="@+id/progressBoxOrders"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/status_ped_carteira_progress_height"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topIconBox"
+            app:pgCardPercent1="80.31"
+            app:pgCardColorHex1="#78BE20"
+            app:pgCardPercent2="11.61"
+            app:pgCardColorHex2="#F0B331"
+            app:pgCardPercent3="8.08"
+            app:pgCardColorHex3="#DA2C27"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

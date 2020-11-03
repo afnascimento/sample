@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+        <include layout="@layout/agenda_reuniao_title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="32dp"
+                 android:layout_marginStart="34dp"
+                 android:layout_marginEnd="34dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="8dp">
+
+            <com.unilever.julia.ui.component.JuliaFiltroDateComponent
+                    android:id="@+id/dtInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginEnd="20dp"
+                    app:julFilDtTitle="@string/inicio"
+                    app:julFilDtIconVisible="true"/>
+
+            <com.unilever.julia.ui.component.JuliaFiltroDateComponent
+                    android:id="@+id/dtFim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="34dp"
+                    app:julFilDtTitle="@string/fim"
+                    app:julFilDtIconVisible="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="8dp">
+
+            <com.unilever.julia.ui.component.JuliaFiltroDateComponent
+                    android:id="@+id/hrInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginEnd="20dp"
+                    app:julFilDtTitle="@string/inicio"
+                    app:julFilDtIconVisible="true"
+                    app:julDateType="TIME"
+                    app:julTextViewIcon="HORARIO"/>
+
+            <com.unilever.julia.ui.component.JuliaFiltroDateComponent
+                    android:id="@+id/hrFim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="34dp"
+                    app:julFilDtTitle="@string/fim"
+                    app:julFilDtIconVisible="false"
+                    app:julDateType="TIME"
+                    app:julTextViewIcon="HORARIO"/>
+
+        </LinearLayout>
+
+        <com.unilever.julia.ui.component.EmailParticipantesComponent
+                android:id="@+id/emailParticipantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginEnd="34dp"/>
+
+        <include layout="@layout/agenda_reuniao_local"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginStart="34dp"
+                 android:layout_marginEnd="34dp"/>
+
+        <com.unilever.julia.components.ButtonsBottom
+            android:id="@+id/buttonsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:btnBottomTextLeft="@string/cancelar"
+            app:btnBottomTextRight="@string/confirmar"/>
+
+    </LinearLayout>
+
+</ScrollView>

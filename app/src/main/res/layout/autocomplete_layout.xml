@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.unilever.julia.components.JuliaAnswerComponent
+            android:id="@+id/julAnswerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:julAnsCompText="@string/text_disambiguation"
+            android:visibility="visible"/>
+
+    <com.unilever.julia.ui.component.JuliaUserChat
+            android:id="@+id/userChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <include layout="@layout/autocomplete_edittext"
+             android:id="@+id/contentAutocomplete"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="visible"/>
+
+</LinearLayout>

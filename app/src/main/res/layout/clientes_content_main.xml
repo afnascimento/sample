@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/clientesContentMain"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorChatBg">
+
+    <!--
+    <android.support.v7.widget.AppCompatEditText
+            style="@style/EditTextFont"
+            android:id="@+id/editTextBusca"
+            android:background="@drawable/edittext_chat_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="@dimen/padding_start"
+            android:layout_marginEnd="@dimen/padding_end"
+            android:text=""
+            android:hint="@string/buscar_clientes"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:layout_marginTop="24dp"
+          android:background="@color/colorStrokeGray"/>
+
+    <include layout="@layout/clientes_content_sort"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginStart="@dimen/padding_start"
+             android:layout_marginEnd="@dimen/padding_end"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcviewClientes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+            -->
+
+</LinearLayout>

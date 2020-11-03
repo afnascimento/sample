@@ -1,0 +1,13 @@
+{
+  "broker": {
+    "accessControlAllowOrigin": "https://julia.unilever.com.br:12345",
+    "apiKey": "73d07153-f3a1-4ebb-a955-387da6f63713",
+    "channel": "App Mobile Julia",
+    "os": "APP_JULIA",
+    "project": "juliaUnilever 2.0",
+    "url": "https://julia-broker-p-bra.cd.unileverservices.com"
+  },
+  "certificate": {
+    "key": "Unilever@123"
+  }
+}

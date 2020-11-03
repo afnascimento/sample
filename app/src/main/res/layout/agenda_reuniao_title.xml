@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/julia_filtro_date_title"
+            android:id="@+id/tvTitle"
+            android:text="@string/titulo_do_evento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputTitleReuniao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            app:errorTextAppearance="@style/text_input_error_appearance">
+
+        <androidx.appcompat.widget.AppCompatEditText
+                style="@style/julia_filtro_date"
+                android:id="@+id/editTitleReuniao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionDone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

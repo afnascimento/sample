@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.unilever.julia.ui.component.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/julia_agenda_swipe_height"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:layout_marginBottom="@dimen/padding_bottom_agenda"
+        app:swipeDirection="left"
+        app:draggedItem="@id/drag_item"
+        app:rightItem="@id/right_view">
+
+    <include layout="@layout/julia_agenda_swipe_right_outlook"
+             android:id="@+id/right_view"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_gravity="end"/>
+
+    <include layout="@layout/julia_agenda_swipe_left"
+             android:id="@+id/drag_item"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+</com.unilever.julia.ui.component.SwipeLayout>

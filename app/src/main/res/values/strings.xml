@@ -1,0 +1,354 @@
+<resources>
+    <string name="app_name">Júlia</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Dialog Permissions -->
+    <string name="dialog_permission_title">Permissão</string>
+    <string name="dialog_permission_imei">Precisamos da permissão a seguir para enviar novidades do aplicativo da júlia para este celular.</string>
+    <string name="dialos_permission_imei_denied">
+        <![CDATA[
+        Você negou a permissão de <b>Telefone</b>,
+        precisamos dessa permissão para enviar novidades do aplicativo da júlia.
+        <b>Por favor, na tela seguinte, vá para permissões e permita.</b>
+        ]]>
+    </string>
+
+    <string name="dialog_permission_ok">ENTENDI</string>
+
+    <string name="header_hello">Olá, Priscila!</string>
+    <string name="header_hello_username">Olá, %s</string>
+    <string name="inicio_boas_vindas1">Eu sou a Júlia, assistente virtual</string>
+    <string name="inicio_boas_vindas2">para vendedores da Unilever</string>
+    <string name="edittext_chat_hint">Envie uma mensagem</string>
+    <string name="julia_chat_msg">Estou aqui para te ajudar com as seguintes informações:</string>
+    <string name="status_do_pedido">Status do Pedido</string>
+    <string name="agenda">Agenda</string>
+    <string name="julia_chat_button_items">
+        <![CDATA[
+        [
+        {\"icon\":\"e90f\", \"color\": \"00A9E0\", \"text\": \"Status do Pedido\"},
+        {\"icon\":\"e90a\", \"color\": \"00A9E0\", \"text\": \"Inovação\"},
+        {\"icon\":\"e900\", \"color\": \"00A9E0\", \"text\": \"Agenda\"}
+        ]
+        ]]>
+    </string>
+
+    <string name="regras_ouro">Regras de Ouro</string>
+    <string name="publico_alvo">CRM Público Alvo</string>
+    <string name="tradestory">Tradestory</string>
+    <string name="material_visibilidade">Material visibilidade</string>
+    <string name="ficha_cadastral">Ficha cadastral</string>
+    <string name="skus_deslistados">SKUs delistados</string>
+
+    <string name="html_text">
+        <![CDATA[
+        This is normal text. <font color=red>This is a red text</font>
+        ]]>
+    </string>
+    <string name="big_text">
+        <![CDATA[
+        Melhor não… Afinal, isso vai contra o <b>Código de Princípios de Negócios da Unilever</b>. Você pode ler mais sobre ele no botão abaixo:
+        ]]>
+    </string>
+    <string name="loren_big_text">
+        <![CDATA[
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Where does it come from?
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        ]]>
+    </string>
+
+    <string name="loren_text">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="lancamento">Lançamento</string>
+    <string name="data_lancamento">01/09/2018</string>
+    <string name="nome_projeto">Seda Shoko</string>
+    <string name="canal">Canal</string>
+    <string name="canais">Canais</string>
+    <string name="todos">Todos</string>
+    <string name="beneficio_esperado">Benefício esperado</string>
+    <string name="content_item">Content Item</string>
+    <string name="data_agenda">07/02/2019</string>
+    <string name="julia_text_evento">Me lembre de fazer amanhã</string>
+    <string name="agenda_local">Pão de Açúcar</string>
+    <string name="julia_agenda_aviso">É pra já! Seus compromissos para essa semana são:</string>
+    <string name="faturado">Faturado</string>
+    <string name="pendente">Pendente</string>
+    <string name="anulado">Anulado</string>
+    <string name="pao_acucar">PÃO DE AÇUCAR</string>
+    <string name="pao_acucar2">Pão de Açúcar123456pamoema Açúcar123456pamoema</string>
+    <string name="valor_pedido">R$ 2.000,00</string>
+    <string name="caixas">caixas</string>
+    <string name="caixa">caixa</string>
+    <string name="julia_status_pedido_text">Confira os status do pedido que você solicitou:</string>
+    <string name="produto">Produto</string>
+    <string name="produtos">Produtos</string>
+    <string name="status_detalhe_produto">Omo</string>
+    <string name="sair">Sair</string>
+    <string name="termos_de_uso">Termos de uso</string>
+    <string name="voz">Voz</string>
+    <string name="avisos_outlook">Avisos do Outlook</string>
+    <string name="avisos_ipv">Avisos de IPV</string>
+    <string name="menu">Menu</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="notificacoes_detalhe">Notificações / Detalhe</string>
+    <string name="novidades">Novidades</string>
+    <string name="novidades_lidas">Novidades lidas</string>
+
+    <string name="entrar">Entrar</string>
+
+    <string name="login_error">Erro ocorrido ao efetuar o login, tente novamente.</string>
+    <string name="login_cancel">Login cancelado.</string>
+    <string name="ola">Olá,</string>
+    <string name="priscila">Priscila</string>
+    <string name="voltar">voltar</string>
+    <string name="entendi">ENTENDI</string>
+
+    <string name="text_copy_paste">texto copiado</string>
+
+    <string name="error_padrao">Desculpe, não consegui entender, Vamos tentar de novo? Reformule sua pergunta em poucas palavras, eu estou aprendendo sobre o mundo de vocês, humanos, ainda…</string>
+    <string name="error_sem_internet"><b>Eita!</b> Parece que você não está conectado à internet, confira suas configurações de rede wi-fi ou dados móveis e tente novamente.</string>
+    <string name="error_timeout">Desculpe, tive um probleminha, pode repetir?</string>
+    <string name="testar_avaliacao">Testar a avaliação</string>
+    <string name="lembrete_julia">Lembrete Julia</string>
+    <string name="concluir">Concluir</string>
+    <string name="agenda_concluir_evento">Deseja realmente concluir este compromisso?</string>
+    <string name="agenda_cancelar_evento">Deseja realmente cancelar este compromisso?</string>
+    <string name="agenda_excluir_evento">Realmente deseja excluir este evento da sua agenda?</string>
+    <string name="dialog_nao">Não</string>
+    <string name="dialog_sim">Sim</string>
+    <string name="dialog_enviando">enviando…</string>
+    <string name="pc">PC</string>
+    <string name="clique_para_ver">Clique para ver</string>
+    <string name="pedidos_do_cliente">Pedidos do cliente</string>
+    <string name="clique_para_ver_detalhes">Clique para ver os detalhes</string>
+    <string name="num_fatura">N.º Fatura</string>
+    <string name="num_transport">N.ºTransp</string>
+    <string name="faturado_em">Faturado em</string>
+    <string name="caixas_title">Caixas</string>
+    <string name="transporte">Transporte</string>
+    <string name="existem_transportes">Existem transportes agendados</string>
+    <string name="data_saida">Data saída</string>
+    <string name="escolher_periodo">Escolher o período</string>
+    <string name="limpar_tudo">Limpar tudo</string>
+    <string name="aplicar_filtros">Aplicar filtros</string>
+    <string name="de">De</string>
+    <string name="selecione_o_intervalo">Selecione o intervalo:</string>
+    <string name="traco">-</string>
+    <string name="ate">Até</string>
+    <string name="rs_money">R$</string>
+    <string name="minimo">Mínimo</string>
+    <string name="maximo">Máximo</string>
+    <string name="_0_00">0,00</string>
+    <string name="valor_minimo_maximo">Valor Mínimo - Máximo</string>
+    <string name="valores_error_minimo">valor maior que o valor máximo</string>
+    <string name="valores_error_maximo">valor menor que o valor mínimo</string>
+    <string name="periodo_filtro">19/02/2019 – 20/02/2019</string>
+    <string name="_09_03_2019">09/03/2019</string>
+    <string name="menor_valor">Menor valor</string>
+    <string name="maior_valor">Maior valor</string>
+    <string name="data_mais_recente">Data mais recente</string>
+    <string name="data_menos_recente">Data menos recente</string>
+    <string name="filtros">Filtros</string>
+    <string name="card_status_title">Omo DT PO Antibac 9x1.8Kg</string>
+    <string name="buscar_por_detalhe">Buscar por detalhe…</string>
+
+    <string name="status_pedido_card_valor">%1$s - %2$s caixas</string>
+    <string name="outlook">Outlook</string>
+    <string name="outlook_card_title">15:38 | Modelo de teste #2</string>
+
+    <string name="tutorial_page1_title">Agenda do outlook</string>
+    <string name="tutorial_page1_description">Agora você pode acessar todos os seus eventos do Outlook com a Júlia! Basta perguntar sobre suas atividades e conferir seus compromissos.</string>
+
+    <string name="tutorial_page2_title">Concluir/Cancelar Atividades da Agenda</string>
+    <string name="tutorial_page2_description">O cliente desmarcou? Já fez a reunião? Conclua/Cancele seus eventos com a Júlia (disponível apenas para as atividades da Salesforce, por enquanto).</string>
+
+    <string name="tutorial_page3_title">Busca por Código de Cliente</string>
+    <string name="tutorial_page3_description">Sim! Você pode consultar seus pedidos pelo código do cliente , basta digitar “pedidos cliente (cód)” e todos os pedidos serão exibidos. Por exemplo: Pedidos  cliente 10007231.</string>
+
+    <string name="tutorial_page4_title">Filtros na Lista de Pedidos do Cliente</string>
+    <string name="tutorial_page4_description">Para facilitar sua busca por pedidos de um cliente, nós adicionamos um filtro, onde você pode ordenar ou pesquisar por data/valor.</string>
+
+    <string name="tutorial_page5_title">Busca por Produto no Detalhe do Pedido</string>
+    <string name="tutorial_page5_description">Quer encontrar um produto em específico no pedido consultado? Agora você pode! É só usar nossa “Busca por detalhe ” no topo do pedido.</string>
+
+    <string name="tutorial_page6_title">Envio de Sugestões</string>
+    <string name="tutorial_page6_description">Gostaria que a Júlia fizesse algo diferente? Tem uma sugestão? Basta digitar “Júlia, quero enviar uma sugestão” que nós receberemos.</string>
+
+    <string name="tutorial_page7_title">Data de Faturamento e de Transporte do Pedido</string>
+    <string name="tutorial_page7_description">Precisa saber quando aquele pedido foi faturado ou transportado? É só conferir na página de detalhe dos seus pedidos!</string>
+
+    <string name="tutorial_page8_title">Compartilhar pedido</string>
+    <string name="tutorial_page8_description">Você já pode compartilhar os status de seus pedidos com seus clientes! Basta clicar em "compartilhar" que um texto será gerado com os dados do status do pedido selecionado.</string>
+
+    <string name="tutorial_page9_title">Incluir compromissos na agenda do Outlook</string>
+    <string name="tutorial_page9_description">Adicione compromissos em sua agenda do Outlook através da Júlia! Basta falar “Quero adicionar um compromisso” e preencher as informações!</string>
+
+    <string name="tutorial_page10_title">Excluir compromissos da agenda do Outlook</string>
+    <string name="tutorial_page10_description">Precisa desmarcar aquela reunião que tinha agendado? Na Júlia você consegue! É só arrastar para o lado esquerdo e selecionar o botão “Excluir”.</string>
+
+    <string name="tutorial_page11_title">Notificações</string>
+    <string name="tutorial_page11_description">Eu já posso te mandar notificações sobre os seus compromissos e acontecimentos importantes da Unilever! É só autorizar o envio de notificações do aplicativo.</string>
+
+    <string name="tutorial_page12_title">Avaliação\nde Pedidos</string>
+    <string name="tutorial_page12_description">O que achou das informações do seu pedido? Agora você pode avaliar os status dos pedidos e, caso algo não esteja correto, é possível me dar um feedback! Basta clicar nos botões de like e dislike!</string>
+
+    <string name="tutorial_page13_title">VEJA O QUE VOCÊ PODE TER PERDIDO NA VERSÃO ANTERIOR!</string>
+    <string name="tutorial_page13_description">Confira também as funcionalidades que foram adicionadas na versão anterior e que continuam presentes nessa.</string>
+
+    <string name="agenda_reuniao_toolbar_title_adicionar">Adicionar evento na agenda</string>
+    <string name="agenda_reunicao_toolbar_title_edicao">Editar evento na agenda</string>
+    <string name="agenda_reuniao_toolbar_title_detalhe">Detalhe evento na agenda</string>
+    <string name="inicio">Início</string>
+    <string name="fim">Fim</string>
+    <string name="adicionar_evento_agenda">Adicionar evento na agenda</string>
+    <string name="email_dos_participantes">E-mail do(s) participante(s):</string>
+    <string name="email_text">andre.nascimento@everis.com</string>
+    <string name="local">Local</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="titulo_do_evento">Título do evento:</string>
+    <string name="reunicao_pao_acucar">Reunião Pão de Açucar</string>
+
+    <string name="load_aguarde">aguarde…</string>
+
+    <string name="agenda_edicao_datas">%1$s - %2$s</string>
+    <string name="agenda_edicao_horario">%1$s - %2$s</string>
+    <string name="agenda_participantes">%1$s…+%2$d</string>
+
+    <string name="campo_obrigatorio">Campo obrigatório</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="email_invalido">Email inválido</string>
+    <string name="excluir">Excluir</string>
+    <string name="consegui_te_ajudar">Consegui te ajudar?</string>
+    <string name="feedback_like">Obrigada pela sua avaliação! </string>
+    <string name="feedback_card_title">Digite abaixo seu feedback:</string>
+
+    <string name="meu_territorio">Meu território</string>
+    <string name="outro_territorio">Outro território</string>
+    <string name="por_cliente">Por cliente</string>
+    <string name="codigo_do_pedido">Código do pedido</string>
+    <string name="text_disambiguation">Você prefere pesquisar pelo seu pedido de qual forma?</string>
+    <string name="hint_cod_pedido">Digite o código do pedido</string>
+    <string name="percent_100">100%</string>
+    <string name="status_pedido_carteira_text">Confira as principais informações do seu território:</string>
+    <string name="territorio">Território</string>
+    <string name="territorio_value">124X1R</string>
+    <string name="num_clientes">173</string>
+    <string name="clientes">Clientes</string>
+    <string name="total_de">Total de</string>
+    <string name="total_de_pedidos">3219</string>
+    <string name="pedidos">pedidos</string>
+    <string name="total_valor_pedido">R$ 3.279.108,56</string>
+    <string name="total_caixas">720</string>
+    <string name="ordenacao">Ordenação:</string>
+    <string name="maior_porcent">Maior %</string>
+    <string name="menor_porcent">Menor %</string>
+    <string name="meus_territorios_title">Meus Territórios</string>
+    <string name="meu_territorio_title">Território %s</string>
+    <string name="alcancado">Alcançado:</string>
+    <string name="meta">Meta</string>
+    <string name="meta_ipv">Meta IPV:</string>
+    <string name="ipv_de_felipe_resck">IPV de Felipe Resck</string>
+    <string name="ipv_title_card">IPV de %s</string>
+
+    <string name="customers_empty">Nenhum cliente encontrado!</string>
+    <string name="territories_empty">Nenhum território encontrado!</string>
+    <string name="autocomplete_hint">código/nome</string>
+    <string name="autocomplete_customers_hint">Digite o código/razão social</string>
+    <string name="autocomplete_territories_hint">Digite o código da região</string>
+
+    <string name="tutorial_v4_pag1_title">Alerta de Novidades!</string>
+    <string name="tutorial_v4_pag1_description">Confira as novas formas de\ntrabalhar comigo desenvolvidas,\nespecialmente, para você!</string>
+    <string name="tutorial_v4_pag2_title">IPV</string>
+    <string name="tutorial_v4_pag2_description">O tão esperado IPV já está\ndisponível aqui, comigo! Para\nacessá-lo, é só digitar “Meu IPV”\nque eu te apresentarei!</string>
+    <string name="tutorial_v4_pag3_title">CRM - Público Alvo</string>
+    <string name="tutorial_v4_pag3_description">Para deixar as informações de\nsuas inovações ainda mais\ncompletas, você pode analisar\no CRM – Público Alvo nos\ndetalhes de cada inovação.</string>
+    <string name="tutorial_v4_pag4_title">Pedidos</string>
+    <string name="tutorial_v4_pag4_description">Para facilitar a sua consulta de\npedidos, otimizamos a maneira de\nacessar. Agora, ao clicar em\nPedidos, na tela inicial, você poderá\nconsultar seus pedidos de várias\nformas, veja acima.</string>
+    <string name="tutorial_v4_pag5_title">Meu Território</string>
+    <string name="tutorial_v4_pag5_description">Nessa opção, você terá acesso a\ntodos os pedidos de seu território\ncom apenas um click, é só escolher\no pedido e conferir os detalhes.</string>
+    <string name="tutorial_v4_pag6_title">Por Cliente</string>
+    <string name="tutorial_v4_pag6_description">Para facilitar a busca por\nclientes, agora você só precisa\ndigitar o começo da razão\nsocial ou código SAP do\ncliente e mostraremos um\nleque de opções para você.</string>
+    <string name="tutorial_v4_pag7_title">Por Código do Pedido</string>
+    <string name="tutorial_v4_pag7_description">O antigo modelo de busca por\ncódigo do pedido ainda está\nde pé, é só digitar o código e\nencontrar seu pedido.</string>
+    <string name="tutorial_v4_pag8_title">Outro Território</string>
+    <string name="tutorial_v4_pag8_description">Está cobrindo férias de\nalguém? Você pode consultar\nos status dos pedidos com o\ncódigo do território dele!</string>
+
+    <string name="tutorial_v5_pag1_title">Novidades em FAQ</string>
+    <string name="tutorial_v5_pag1_description">Agora você pode tirar dúvidas\nsobre RDV, Frota, Cadastro de\nCliente, Sistemática e\nTelefonia! Basta perguntar e\neu te responderei!</string>
+    <string name="kibon_m_m_s"><![CDATA[Kibon M&M’s]]></string>
+    <string name="vendas_em">Vendas em</string>
+    <string name="month_year">Agosto, 2019</string>
+    <string name="avaliar">Avaliar</string>
+    <string name="tradestory_evaluation_description">Toque em uma estrela para classificar</string>
+    <string name="tradestory_evaluation_opinion">Opinião (Opcional):</string>
+    <string name="tradestory_evaluation_edittext">Consegui entender e absorver todo o conteúdo, muito bom!</string>
+    <string name="tradestory_evaluation_empty">Toque nas estrelas para avaliação!</string>
+    <string name="tradestory_evaluation_success">Avaliação enviada!</string>
+    <string name="novos_skus">Novos SKUs</string>
+
+    <string name="innovation_projects_empty_title">Nenhum projeto encontrado no momento.</string>
+    <string name="innovation_projects_empty_description"></string>
+    <string name="notification_description">Novidade no app: agora você pode compartilhar seus pedidos.</string>
+    
+    <string name="opa">Opa!</string>
+    <string name="notificacao_empty">Você ainda não tem nenhuma notificação.</string>
+    <string name="positivacao">Positivação</string>
+    <string name="categoria_foco">Categoria Foco</string>
+    <string name="detalhes_ipv">Detalhes do IPV</string>
+    <string name="detalhe_ipv">Detalhe IPV</string>
+    <string name="ipv_title">IPV %s</string>
+    <string name="ipv_hint">Buscar %s</string>
+    
+    <string name="faseamento">Faseamento</string>
+    <string name="_10_toneladas">10 toneladas</string>
+    <string name="_23_06">23/06</string>
+    <string name="parabens_title">Parabéns</string>
+    <string name="parabens_message">Você atingiu a meta estipulada dentro do prazo, continue assim!</string>
+    
+    <string name="num_toneladas">%s tonelada(s)</string>
+
+    <string name="detail_client">Detalhe cliente</string>
+    <string name="detail_group">Detalhe do Grupo</string>
+    <string name="categorias">Categorias</string>
+    <string name="buscar_categorias">Buscar categorias</string>
+    <string name="buscar_canais">Buscar canais</string>
+    <string name="buscar_marcas">Buscar marcas</string>
+    <string name="buscar_grupo">Buscar grupo</string>
+    <string name="buscar_produto">Buscar produto</string>
+    <string name="buscar_territorio">Buscar território</string>
+    <string name="buscar_distrito">Buscar distrito</string>
+    <string name="buscar_filial">Buscar filial</string>
+    <string name="buscar_regional">Buscar regional</string>
+    <string name="_hc">HC</string>
+    <string name="sku_67680026">SKU 67680026</string>
+    <string name="knor_cdo_gal_cart_80x6l_114g_prm_12x10">Knor CDO Gal Cart 80x6L/114g PRM 12x10 80x6L/114g PRM 12x10</string>
+    <string name="realizado">Realizado</string>
+    <string name="_50_25_00">50% (25,00)</string>
+    <string name="estimativa">Estimativa</string>
+    <string name="_50_00">50,00</string>
+    <string name="ipv_offer_score_entry">%1$s (%2$s)</string>
+    <string name="buscar_skus">Buscar skus</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="commodites">Commodites</string>
+    <string name="todas">Todas</string>
+    <string name="marcas">Marcas</string>
+
+    <string name="attendance_title">Área de atendimento</string>
+    <string name="attendance_territory">Território</string>
+    <string name="attendance_district">Distrito</string>
+    <string name="attendance_subsidiary">Filial</string>
+    <string name="attendance_hit_regional">Regional</string>
+    <string name="minha_area">Minha área</string>
+
+</resources>

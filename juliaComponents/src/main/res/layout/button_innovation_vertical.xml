@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@drawable/bg_innovation_card"
+        android:layout_marginBottom="24dp">
+
+    <com.unilever.julia.components.ButtonWrapContent
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            app:btnWrapText="@string/detail"
+            app:btnWrapColor="GRAY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View android:layout_width="3dp"
+          android:layout_height="0dp"
+          android:background="@drawable/bg_innovation_card_line_left"
+          android:id="@+id/ivProp"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvIcon1"
+            android:textSize="20sp"
+            android:textColor="@color/inovacaoIconGray"
+            app:julTextViewIcon="HOME_CARE"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivProp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:text="@string/home_care"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription"
+            app:layout_constraintStart_toEndOf="@+id/tvIcon1"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnDetail"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/tvIcon1"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIcon1"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvIcon2"
+            android:textSize="20sp"
+            android:textColor="@color/inovacaoIconGray"
+            app:julTextViewIcon="PROJETO"
+            app:layout_constraintStart_toEndOf="@+id/ivProp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvIcon1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:text="@string/projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProject"
+            app:layout_constraintStart_toEndOf="@+id/tvIcon2"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/tvIcon2"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIcon2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:text="@string/num_projects"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProjectNum"
+            app:layout_constraintStart_toEndOf="@+id/tvProject"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/tvProject"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProject"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

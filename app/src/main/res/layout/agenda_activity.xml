@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_back"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+    <com.unilever.julia.ui.component.JuliaAgendaCard
+            android:id="@+id/agendaDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/padding_start"
+            android:layout_marginEnd="@dimen/padding_end"/>
+
+</LinearLayout>

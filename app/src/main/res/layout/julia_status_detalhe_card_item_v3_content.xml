@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/card_status_title"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextCinza"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arrowRight"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCodeProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="673774663"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextCinza"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arrowRight"/>
+
+    <include layout="@layout/button_arrow_right"
+             android:id="@+id/arrowRight"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R$ 1.000,00 | 5 caixas"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextCinza"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodeProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arrowRight"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

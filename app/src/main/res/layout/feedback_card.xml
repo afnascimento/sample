@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="@dimen/padding_start"
+        android:layout_marginEnd="@dimen/padding_end"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/colorWhite"
+                  android:paddingTop="17dp"
+                  android:paddingBottom="17dp"
+                  android:paddingStart="24dp"
+                  android:paddingEnd="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:text="@string/feedback_card_title"
+                android:textSize="12sp"
+                android:textColor="@color/feedback_gray"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+                style="@style/EditTextFont"
+                android:id="@+id/editTextFeedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:imeOptions="actionDone"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.unilever.julia.components.ButtonsBottom
+            android:id="@+id/buttonsBottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFeedback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:btnBottomTextLeft="@string/cancelar"
+            app:btnBottomTextRight="@string/confirmar"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

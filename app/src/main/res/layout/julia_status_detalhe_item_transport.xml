@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/transport_title_bg"
+            android:baselineAligned="false">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/julia_status_detalhe_item_title"
+                    android:id="@+id/tvTitleCol1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_fatura"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transport_title_middle_bg">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/julia_status_detalhe_item_title"
+                    android:id="@+id/tvTitleCol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faturado_em"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/julia_status_detalhe_item_title"
+                    android:id="@+id/tvTitleCol3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/caixas_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/contentItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!--
+
+        <include layout="@layout/julia_status_detalhe_item_transport_item"/>
+
+        <include layout="@layout/julia_status_detalhe_item_transport_item"/>
+
+        <include layout="@layout/julia_status_detalhe_item_transport_item"/>
+
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

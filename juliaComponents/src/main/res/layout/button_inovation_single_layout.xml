@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contentClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_buttom_horizontal_ripple"
+        android:clickable="true"
+        android:focusable="true">
+
+    <com.unilever.julia.components.ButtonIconRound
+            android:id="@+id/btIconRound"
+            android:layout_width="@dimen/button_innovation_icon_width"
+            android:layout_height="@dimen/button_innovation_icon_height"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:julTextViewIcon="HOME_CARE"
+            app:btIcRoundTextSize="@dimen/button_innovation_icon_size"
+            app:btIcRoundBgColor="@color/colorButtonGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/inovation_title"
+            android:textSize="@dimen/button_innovation_text_title"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorTextGray"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btIconRound"
+            app:layout_constraintTop_toTopOf="@+id/btIconRound"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvProject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/inovation_projects"
+            android:textSize="@dimen/button_innovation_text_description"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorTextGray"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btIconRound"
+            app:layout_constraintBottom_toBottomOf="@+id/btIconRound"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg2">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="6dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="34dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/tutorial_close"
+                android:id="@+id/imgClose"
+                android:layout_gravity="end"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <include layout="@layout/tutorial_content"
+                android:id="@+id/contentMain"
+                android:visibility="visible"/>
+
+            <com.unilever.julia.components.LoadView
+                android:id="@+id/loadView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="34dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <include layout="@layout/tutorial_close"
+                     android:id="@+id/imgClose"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:layout_marginTop="12dp"
+                     android:layout_marginEnd="12dp"
+                     android:layout_alignParentEnd="true"/>
+
+            <androidx.viewpager.widget.ViewPager
+                    android:visibility="visible"
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imgClose"
+                    android:layout_above="@+id/dotsPages"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/dotsPages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:dotsColor="@color/tutorial_dots_selected"
+                    app:dotsStrokeColor="@color/tutorial_dots_color"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="12dp"
+                    app:dotsSpacing="8dp"
+                    app:dotsStrokeWidth="2dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    -->
+
+</RelativeLayout>

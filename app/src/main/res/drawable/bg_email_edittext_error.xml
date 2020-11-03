@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/colorChatBg"/>
+
+    <stroke android:width="0.5dp" android:color="@color/colorRed"/>
+
+    <corners android:topLeftRadius="@dimen/bg_email_edittext_radius"
+             android:bottomLeftRadius="@dimen/bg_email_edittext_radius"
+             android:topRightRadius="@dimen/bg_email_edittext_radius"
+             android:bottomRightRadius="@dimen/bg_email_edittext_radius"/>
+</shape>

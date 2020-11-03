@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/filtro_tabs_height"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:baselineAligned="false">
+
+    <RelativeLayout
+            android:id="@+id/tabRefinar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tabs_text.active"
+                android:id="@+id/tvTitleTab1"
+                android:text="@string/refinar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        <View android:id="@+id/strokeTab1"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/filtro_blue_accent"
+              android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/tabOrdenacao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tabs_text.inactive"
+                android:id="@+id/tvTitleTab2"
+                android:text="@string/ordernar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        <View android:id="@+id/strokeTab2"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/filtro_cinza_text"
+              android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

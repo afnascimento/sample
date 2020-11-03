@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_stroke_top_gray"
+    android:paddingTop="@dimen/innovation_v2_margin_top_32dp"
+    android:paddingBottom="@dimen/innovation_v2_margin_bottom_32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/innovation_detail_title"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/innovation_v2_margin_start"
+        android:layout_marginEnd="@dimen/innovation_v2_margin_end"
+        android:text="@string/midias"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/innovation_v2_margin_top_32dp">
+
+        <LinearLayout
+            android:id="@+id/contentItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--
+            <include layout="@layout/innovation_v2_midias_card"/>
+
+            <include layout="@layout/innovation_v2_midias_card"/>
+            -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

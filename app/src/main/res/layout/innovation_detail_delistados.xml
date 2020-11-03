@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:paddingStart="@dimen/innovation_v2_margin_start"
+        android:paddingEnd="@dimen/innovation_v2_margin_end"
+        android:paddingTop="@dimen/innovation_v2_margin_top_32dp"
+        android:paddingBottom="@dimen/innovation_v2_margin_bottom_32dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/innovation_detail_title"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novos_skus"/>
+
+        <com.unilever.julia.components.RecyclerViewExpandableHeight
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/innovation_v2_margin_top_32dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

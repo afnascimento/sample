@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentClick"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorChatBg"
+    android:paddingTop="29dp"
+    android:paddingBottom="26dp"
+    android:paddingStart="@dimen/margin_start_24dp"
+    android:paddingEnd="@dimen/margin_end_24dp">
+
+    <com.unilever.julia.components.ButtonTextRound
+        android:id="@+id/buttonRound"
+        android:layout_width="@dimen/button_text_bg_size"
+        android:layout_height="@dimen/button_text_bg_size"
+        app:btTextBgColor="@color/colorRed"
+        app:btTextSize="@dimen/button_text_label_size"
+        app:btTextValue="@string/commodity_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/_0010587057"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="14sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonRound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/carrefour_supermercados_s_o_paulo_ltda"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto_bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvCode"
+        app:layout_constraintStart_toStartOf="@+id/tvCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="visible"
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/maioneses"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="14sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

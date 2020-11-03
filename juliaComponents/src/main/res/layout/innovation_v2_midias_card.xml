@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/midias_widht"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/innovation_v2_midias_card_button"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/innovation_detail_title"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kibon_m_m_s"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/innovation_detail_description"
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loren_text"/>
+
+</LinearLayout>

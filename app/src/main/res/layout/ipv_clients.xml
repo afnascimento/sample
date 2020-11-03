@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <com.unilever.julia.components.ButtonTextRound
+        android:visibility="gone"
+        android:id="@+id/buttonRound"
+        android:layout_width="@dimen/button_text_bg_size"
+        android:layout_height="@dimen/button_text_bg_size"
+        android:layout_marginStart="@dimen/margin_start_24dp"
+        app:btTextBgColor="@color/colorOrange"
+        app:btTextSize="@dimen/button_text_label_size"
+        app:btTextValue="@string/commodity_text"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText"
+        style="@style/EditTextFont.Filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_end_24dp"
+        android:background="@drawable/edittext_chat_bg"
+        android:hint="@string/buscar_clientes"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:minHeight="@dimen/min_height_44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonRound"
+        app:layout_constraintTop_toTopOf="parent" />
+        -->
+
+    <include
+        android:id="@+id/contentTop"
+        layout="@layout/ipv_clients_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_top_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentTop"
+        tools:listitem="@layout/ipv_clientes_item_holder" />
+
+    <com.unilever.julia.components.LoadView
+        android:visibility="gone"
+        android:id="@+id/loadView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentTop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

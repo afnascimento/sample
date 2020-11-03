@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contentClick"
+        android:layout_width="@dimen/button_horizontal_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_buttom_horizontal_ripple"
+        android:clickable="true"
+        android:focusable="true">
+
+    <include layout="@layout/faixa_novo"
+             android:id="@+id/contentFaixa"
+             android:layout_width="@dimen/button_horizontal_faixa_size"
+             android:layout_height="@dimen/button_horizontal_faixa_size"
+             android:layout_alignParentEnd="true"/>
+
+    <com.unilever.julia.components.ButtonIconRound
+            android:id="@+id/btIconRound"
+            android:layout_width="@dimen/button_horizontal_icon_width"
+            android:layout_height="@dimen/button_horizontal_icon_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:julTextViewIcon="CARTEIRA"
+            app:btIcRoundTextSize="@dimen/button_horizontal_icon_size"
+            app:btIcRoundBgColor="@color/colorButtonBlue"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/btIconRound"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/inovacao"
+            android:textSize="@dimen/button_horizontal_text_size"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorButtonBlue"/>
+
+</RelativeLayout>

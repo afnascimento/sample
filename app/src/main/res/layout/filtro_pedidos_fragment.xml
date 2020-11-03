@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.unilever.julia.ui.component.JuliaFiltroItemComponent
+                android:id="@+id/itemPeriodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:julFilItemTitle="@string/escolher_periodo"
+                app:julFilItemValueLeft="09/03/2019"
+                app:julFilItemValueRight="15/03/2019"
+                app:julFilItemValuesVisible="true"/>
+
+        <com.unilever.julia.ui.component.JuliaFiltroItemComponent
+                android:id="@+id/itemValores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:julFilItemTitle="@string/valor_minimo_maximo"
+                app:julFilItemValueLeft="R$ 100,00"
+                app:julFilItemValueRight="R$ 1.000,00"
+                app:julFilItemValuesVisible="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

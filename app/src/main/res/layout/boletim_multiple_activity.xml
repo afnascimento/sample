@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorChatBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/contentTop" layout="@layout/toolbar_back"/>
+
+    <com.unilever.julia.components.LoadView
+        android:visibility="gone"
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentTop"/>
+
+    <com.unilever.julia.components.boletim.BoletimRecyclerFilter
+        android:visibility="visible"
+        android:id="@+id/boletimRecyclerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentTop"
+        android:layout_above="@+id/button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/ButtonsBottom.blue"
+        android:visibility="visible"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="135dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_top_24dp"
+        android:layout_marginBottom="@dimen/margin_bottom_24dp"
+        android:text="@string/aplicar"/>
+
+</RelativeLayout>

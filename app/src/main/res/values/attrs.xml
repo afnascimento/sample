@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProgressCard">
+        <attr name="pgCardPercent1" format="float"/>
+        <attr name="pgCardColorHex1" format="string"/>
+        <attr name="pgCardPercent2" format="float"/>
+        <attr name="pgCardColorHex2" format="string"/>
+        <attr name="pgCardPercent3" format="float"/>
+        <attr name="pgCardColorHex3" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="currencyEditText">
+        <attr name="groupDivider" format="string" />
+        <attr name="monetaryDivider" format="string" />
+        <attr name="locale" format="string" />
+        <attr name="showSymbol" format="boolean" />
+        <attr name="eraseWhenZero" format="boolean" />
+        <attr name="decimalPoints" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonComponent">
+        <attr name="julTextViewIcon"/>
+        <attr name="btcompText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonDisambiguation">
+        <attr name="julTextViewIcon"/>
+        <attr name="btDisambText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="JuliaButtonComponent">
+        <attr name="julBtCompText" format="string"/>
+        <attr name="julBtCompItems" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="swipeDirection" format="integer">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+        </attr>
+        <attr name="isFreeDragAfterOpen" format="boolean"/>
+        <attr name="isFreeHorizontalDrag" format="boolean"/>
+        <attr name="isContinuousSwipe" format="boolean"/>
+        <attr name="isTogether" format="boolean"/>
+        <attr name="rightItem" format="reference"/>
+        <attr name="leftItem" format="reference"/>
+        <attr name="draggedItem" format="reference"/>
+        <attr name="autoMovingSensitivity" format="integer"/>
+        <attr name="rightDragViewPadding" format="dimension"/>
+        <attr name="leftDragViewPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="JuliaFiltroItemComponent">
+        <attr name="julFilItemTitle" format="string"/>
+        <attr name="julFilItemValueLeft" format="string"/>
+        <attr name="julFilItemValueRight" format="string"/>
+        <attr name="julFilItemValuesVisible" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="julDateType" format="enum">
+        <enum name="DATE" value="0"/>
+        <enum name="TIME" value="1"/>
+    </attr>
+
+    <declare-styleable name="JuliaFiltroDateComponent">
+        <attr name="julDateType"/>
+        <attr name="julTextViewIcon"/>
+        <attr name="julFilDtTitle" format="string"/>
+        <attr name="julFilDtIconVisible" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AutoCompleteComponent">
+        <attr name="acp_hint" format="string"/>
+    </declare-styleable>
+
+</resources>

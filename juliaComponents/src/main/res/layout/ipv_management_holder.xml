@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bh_001"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="12sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fernando_sousa"
+        android:textColor="@color/colorTextGray1"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto_bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvCode"
+        app:layout_constraintStart_toStartOf="@+id/tvCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_meta"
+            android:textColor="@color/colorTextGray1"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/_99porcent"
+            android:textColor="@color/colorTextGray1"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/_separator"
+            android:textColor="@color/colorTextGray1"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_score"
+            android:textColor="@color/colorTextGray1"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/_99porcent"
+            android:textColor="@color/colorGreen"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/buttonRight"
+        layout="@layout/button_arrow_right"
+        android:layout_width="@dimen/bt_arrow_right_size"
+        android:layout_height="@dimen/bt_arrow_right_size"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineSeparator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.unilever.julia.components.GridViewExpandableHeight
+            android:id="@+id/gridItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            tools:listitem="@layout/ipv_item_layout" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/lineSeparator"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_separator_height"
+        android:background="@color/colorStrokeGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

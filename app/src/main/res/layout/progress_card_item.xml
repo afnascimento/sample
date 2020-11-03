@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_ped_carteira_progress_height">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/percent_100"
+            android:textSize="12sp"
+            android:textColor="#78BE20"
+            android:fontFamily="@font/roboto_bold"/>
+
+    <View android:id="@+id/viewProgress"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/status_ped_carteira_progress_height_stroke"
+          android:background="#78BE20"
+          android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

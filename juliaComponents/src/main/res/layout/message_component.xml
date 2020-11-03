@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/julia_chat_shape"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJuliaText"
+            android:text="@string/julia_chat_msg"
+            android:textSize="16sp"
+            android:textColor="@color/chatJuliaTextColor"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout android:id="@+id/contentTextClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTextClick"
+                android:text="@string/clique_para_ver"
+                android:textSize="16sp"
+                android:textColor="@color/chatJuliaTextColor"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/tvTextClick"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/chatJuliaTextColor"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

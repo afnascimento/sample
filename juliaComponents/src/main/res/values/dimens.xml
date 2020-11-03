@@ -1,0 +1,73 @@
+<resources>
+
+    <dimen name="stroke_separator_height">0.5dp</dimen>
+
+    <dimen name="button_radius">60dp</dimen>
+
+    <dimen name="toolbar_height">72dp</dimen>
+    <dimen name="toolbar_arrow_back_size">35dp</dimen>
+
+    <dimen name="margin_top_24dp">24dp</dimen>
+    <dimen name="margin_bottom_24dp">24dp</dimen>
+    <dimen name="margin_start_24dp">24dp</dimen>
+    <dimen name="margin_end_24dp">24dp</dimen>
+    <dimen name="margin_start_32dp">32dp</dimen>
+    <dimen name="margin_end_32dp">32dp</dimen>
+    <dimen name="min_height_44dp">44dp</dimen>
+
+    <dimen name="padding_start">24dp</dimen>
+    <dimen name="padding_end">24dp</dimen>
+    <dimen name="padding_top">24dp</dimen>
+    <dimen name="padding_bottom">24dp</dimen>
+
+    <dimen name="round_linear_radius_corner">45dp</dimen>
+    <dimen name="round_linear_elevation">2dp</dimen>
+
+    <dimen name="boolean_button_radius">45dp</dimen>
+
+    <!-- JuliaAnswerComponent -->
+    <dimen name="julia_answer_avatar_width">35dp</dimen>
+    <dimen name="julia_answer_avatar_height">38dp</dimen>
+
+    <!-- JuliaChatInnovationHorizontal -->
+    <dimen name="julia_innovation_horizontal_one_margin_left">83dp</dimen>
+    <dimen name="julia_innovation_horizontal_one_margin_right">24dp</dimen>
+
+    <dimen name="julia_innovation_horizontal_two_margin_left">83dp</dimen>
+    <dimen name="julia_innovation_horizontal_two_margin_left_between">12dp</dimen>
+
+    <dimen name="julia_innovation_horizontal_multiple_margin_left">24dp</dimen>
+    <dimen name="julia_innovation_horizontal_multiple_margin_left_between">12dp</dimen>
+    <dimen name="julia_innovation_horizontal_multiple_margin_right">24dp</dimen>
+
+    <!-- innovationsV2 -->
+    <dimen name="innovation_v2_margin_top_32dp">32dp</dimen>
+    <dimen name="innovation_v2_margin_bottom_32dp">32dp</dimen>
+    <dimen name="innovation_v2_margin_top_24dp">24dp</dimen>
+    <dimen name="innovation_v2_margin_bottom_24dp">24dp</dimen>
+    <dimen name="innovation_v2_margin_start">24dp</dimen>
+    <dimen name="innovation_v2_margin_end">16dp</dimen>
+    <dimen name="midias_widht">288dp</dimen>
+    <dimen name="midias_height">136dp</dimen>
+    <dimen name="bg_corner_radius">8dp</dimen>
+
+    <!-- ButtonAlertPush -->
+    <dimen name="bt_push_alert_text_size">12sp</dimen>
+
+    <!-- BUTTON ROUND TEXT -->
+    <dimen name="button_text_bg_size">55dp</dimen>
+    <dimen name="button_text_label_size">12sp</dimen>
+
+    <!-- BUTTON ROUND ICON -->
+    <dimen name="button_round_icon_size">27sp</dimen>
+    <dimen name="button_round_icon_height">48dp</dimen>
+    <dimen name="button_round_icon_width">48dp</dimen>
+
+    <!-- Others -->
+    <dimen name="bt_arrow_right_size">45dp</dimen>
+
+    <dimen name="filtro_tabs_height">55dp</dimen>
+
+    <dimen name="button_height">45dp</dimen>
+
+</resources>

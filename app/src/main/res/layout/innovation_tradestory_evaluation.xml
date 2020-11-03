@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <com.unilever.julia.components.ToolbarBack
+            android:id="@+id/toolbar"
+            android:background="@drawable/header_azul"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:elevation="4dp"
+            app:toolbarBackTitle="@string/avaliar"/>
+
+        <include layout="@layout/innovation_tradestory_evaluation_content"/>
+
+        <com.unilever.julia.components.ButtonsBottom
+            android:paddingBottom="16dp"
+            android:id="@+id/buttonsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:btnBottomTextLeft="@string/cancelar"
+            app:btnBottomTextRight="@string/concluir"/>
+
+    </LinearLayout>
+
+</ScrollView>

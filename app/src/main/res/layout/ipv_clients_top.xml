@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/margin_top_24dp"
+    android:paddingStart="@dimen/margin_start_24dp"
+    android:paddingEnd="@dimen/margin_end_24dp">
+
+    <com.unilever.julia.components.ButtonTextRound
+        android:visibility="visible"
+        android:id="@+id/buttonRound"
+        android:layout_width="@dimen/button_text_bg_size"
+        android:layout_height="@dimen/button_text_bg_size"
+        android:layout_marginEnd="8dp"
+        app:btTextBgColor="@color/colorOrange"
+        app:btTextSize="@dimen/button_text_label_size"
+        app:btTextValue="@string/commodity_text" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/EditTextFont.Filter"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_chat_bg"
+        android:hint="@string/buscar_clientes"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:minHeight="@dimen/min_height_44dp" />
+
+</LinearLayout>

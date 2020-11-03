@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="@dimen/margin_start_24dp"
+        android:paddingEnd="8dp">
+
+        <com.unilever.julia.components.ButtonTextRound
+            android:id="@+id/buttonRound"
+            android:layout_width="@dimen/button_text_bg_size"
+            android:layout_height="@dimen/button_text_bg_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/ipv_clientes_item_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+            app:layout_constraintStart_toEndOf="@+id/buttonRound"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/button_arrow_right"
+            android:id="@+id/buttonRight"
+            android:layout_width="@dimen/bt_arrow_right_size"
+            android:layout_height="@dimen/bt_arrow_right_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_separator_height"
+        android:background="@color/colorStrokeGray"/>
+
+</LinearLayout>

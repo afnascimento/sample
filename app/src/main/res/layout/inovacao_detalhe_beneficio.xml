@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorChatBg"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingStart="24dp"
+        android:paddingRight="24dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:text="@string/beneficio_esperado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBeneficioTitle"/>
+
+    <LinearLayout
+            android:id="@+id/contentBeneficiosItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!--
+        <include layout="@layout/inovacao_beneficio_item_textview"/>
+
+        <include layout="@layout/inovacao_beneficio_item_textview"/>
+
+        <include layout="@layout/inovacao_beneficio_item_textview"/>
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

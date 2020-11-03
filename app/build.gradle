@@ -1,0 +1,330 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+def mDefaultVersionName = "2.1.5"
+def mDefaultVersionCode = 9
+
+def mVersionName = System.getenv("VERSION_NAME") ? System.getenv("VERSION_NAME") : mDefaultVersionName
+def mVersionCode = System.getenv("VERSION_CODE") ? System.getenv("VERSION_CODE").toInteger() : mDefaultVersionCode
+def mUrlVersion =  System.getenv("URL_VERSION") ? System.getenv("URL_VERSION") : ""
+
+project.logger.lifecycle("VERSION_NAME --> " + mVersionName)
+project.logger.lifecycle("VERSION_CODE --> " + mVersionCode)
+project.logger.lifecycle("URL_VERSION --> " + mUrlVersion)
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.unilever.julia"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode mVersionCode
+        versionName mVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+            ext.enableCrashlytics = false
+        }
+    }
+    flavorDimensions "version"
+    productFlavors {
+        dev {
+            dimension "version"
+            applicationIdSuffix ".dev"
+            versionName mVersionName + "_dev"
+
+            def msalApplicationId = "8901df78-1f35-4e66-aa01-5afc4f5c2e6c"
+            def msalScopes = "https://graph.microsoft.com/User.Read;https://graph.microsoft.com/Calendars.Read"
+
+            manifestPlaceholders = [msalApplicationId: "msal${msalApplicationId}"]
+            buildConfigField("String", "MSAL_APPLICATION_ID", "\"${msalApplicationId}\"")
+            buildConfigField("String", "MSAL_SCOPES", "\"${msalScopes}\"")
+
+            buildConfigField "boolean", 'IS_PERMISSION_PRINT_SCREEN', "true"
+            buildConfigField "boolean", 'IS_PRINT_LOG', "true"
+
+            buildConfigField "boolean", 'IS_URL_VERSION', "false"
+            buildConfigField("String", "URL_VERSION", "\"${mUrlVersion}\"")
+        }
+        appScan {
+            dimension "version"
+            applicationIdSuffix ""
+            versionName mVersionName + "_appScan"
+
+            def msalApplicationId = "8901df78-1f35-4e66-aa01-5afc4f5c2e6c"
+            def msalScopes = "https://graph.microsoft.com/User.Read;https://graph.microsoft.com/Calendars.Read"
+
+            manifestPlaceholders = [msalApplicationId: "msal${msalApplicationId}"]
+            buildConfigField("String", "MSAL_APPLICATION_ID", "\"${msalApplicationId}\"")
+            buildConfigField("String", "MSAL_SCOPES", "\"${msalScopes}\"")
+
+            buildConfigField "boolean", 'IS_PERMISSION_PRINT_SCREEN', "false"
+            buildConfigField "boolean", 'IS_PRINT_LOG', "false"
+
+            def urlVersion = System.getenv("URL_VERSION") ? System.getenv("URL_VERSION") : "p1"
+            buildConfigField "boolean", 'IS_URL_VERSION', "true"
+            buildConfigField("String", "URL_VERSION", "\"${urlVersion}\"")
+        }
+        preProd {
+            dimension "version"
+            applicationIdSuffix ".qa"
+            versionName mVersionName + "_preProd"
+
+            def msalApplicationId = "1516f813-e189-4587-8158-ffb338650aa7"
+            def msalScopes = "https://graph.microsoft.com/User.Read;https://graph.microsoft.com/Calendars.Read"
+
+            manifestPlaceholders = [msalApplicationId: "msal${msalApplicationId}"]
+            buildConfigField("String", "MSAL_APPLICATION_ID", "\"${msalApplicationId}\"")
+            buildConfigField("String", "MSAL_SCOPES", "\"${msalScopes}\"")
+
+            buildConfigField "boolean", 'IS_PERMISSION_PRINT_SCREEN', "true"
+            buildConfigField "boolean", 'IS_PRINT_LOG', "false"
+
+            def urlVersion = System.getenv("URL_VERSION") ? System.getenv("URL_VERSION") : "q"
+            buildConfigField "boolean", 'IS_URL_VERSION', "true"
+            buildConfigField("String", "URL_VERSION", "\"${urlVersion}\"")
+        }
+        prod {
+            dimension "version"
+            applicationIdSuffix ""
+            //versionName mVersionName
+
+            def msalApplicationId = "1516f813-e189-4587-8158-ffb338650aa7"
+            def msalScopes = "https://graph.microsoft.com/User.Read;https://graph.microsoft.com/Calendars.Read"
+
+            manifestPlaceholders = [msalApplicationId: "msal${msalApplicationId}"]
+            buildConfigField("String", "MSAL_APPLICATION_ID", "\"${msalApplicationId}\"")
+            buildConfigField("String", "MSAL_SCOPES", "\"${msalScopes}\"")
+
+            buildConfigField "boolean", 'IS_PERMISSION_PRINT_SCREEN', "false"
+            buildConfigField "boolean", 'IS_PRINT_LOG', "false"
+
+            def urlVersion = System.getenv("URL_VERSION") ? System.getenv("URL_VERSION") : "p"
+            buildConfigField "boolean", 'IS_URL_VERSION', "true"
+            buildConfigField("String", "URL_VERSION", "\"${urlVersion}\"")
+        }
+    }
+    /*
+    productFlavors.all { flavor ->
+
+        def config = getJuliaConfig(flavor.name)
+
+        def msalApplicationId = "msal" + config.msalApplicationId
+        manifestPlaceholders = [msalApplicationId: msalApplicationId]
+
+        buildConfigField "boolean", 'IS_PERMISSION_PRINT_SCREEN', "${config.appPrintScreen}"
+        buildConfigField "boolean", 'IS_PRINT_LOG', "${config.appPrintLog}"
+
+        resValue "string", "cert_keystore_pass", "${config.certKeyStorePass}"
+
+        resValue "string", 'broker_project', "${config.brokerProject}"
+        resValue "string", 'broker_channel', "${config.brokerChannel}"
+        resValue "string", 'broker_os', "${config.brokerOs}"
+        resValue "string", 'broker_url', "${config.brokerUrl}"
+        resValue "string", 'broker_api_key', "${config.brokerApiKey}"
+
+        resValue "string", 'msal_application_scopes', "${config.msalScopes}"
+        resValue "string", "msal_application_id", "${config.msalApplicationId}"
+    }
+    */
+    /*
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(outputFile.name, "julia_${variant.versionName}.apk")
+                outputFileName = fileName
+            }
+        }
+    }
+    */
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputDir = new File("${project.buildDir.absolutePath}/outputs/apk/${variant.flavorName}/${variant.buildType.name}")
+            def outputFileName = "app-${variant.flavorName}-${variant.buildType.name}.apk"
+            // def outputFile = new File("$outputDir/$outputFileName")
+
+            variant.packageApplicationProvider.get().outputDirectory = new File("$outputDir")
+            output.outputFileName = outputFileName
+        }
+    }
+
+    dexOptions {
+        maxProcessCount 6
+        javaMaxHeapSize "2g"
+        preDexLibraries true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /*
+    testOptions {
+        testOptions {
+            unitTests.returnDefaultValues = true
+        }
+
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    */
+}
+
+/*
+configurations.all {
+    resolutionStrategy {
+        // fail eagerly on version conflict (includes transitive dependencies)
+        // e.g. multiple different versions of the same dependency (group and name are equal)
+        failOnVersionConflict()
+
+        // prefer modules that are part of this build (multi-project or composite build) over external modules
+        preferProjectModules()
+
+        // force certain versions of dependencies (including transitive)
+        // append new forced modules:
+        force 'com.android.support:animated-vector-drawable:28.0.0', 'com.android.support:customtabs:28.0.0', 'com.android.support:support-v4:28.0.0', 'com.android.support:support-media-compat:28.0.0'
+    }
+}
+*/
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // microsoft authentication
+    implementation 'com.microsoft.identity.client:msal:0.3.2-alpha'//0.2.1
+
+    // Firebase
+    implementation "com.google.firebase:firebase-core:$rootProject.firebaseCoreVersion"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.firebaseMessagingVersion"
+    implementation "com.google.firebase:firebase-database:$rootProject.firebaseDatabaseVersion"
+
+    // Crash And Bugs
+    implementation "com.crashlytics.sdk.android:crashlytics:$rootProject.crashlyticsVersion"
+    //implementation 'com.flurry.android:analytics:11.6.0@aar'
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Androidx
+    implementation "com.google.android.material:material:$rootProject.googleMaterialVersion"
+    implementation "androidx.annotation:annotation:$rootProject.androidxAnnotationVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.androidxAppcompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.androidxRecyclerviewVersion"
+    implementation "androidx.cardview:cardview:$rootProject.androidxCardviewVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxConstraintlayoutVersion"
+    implementation "androidx.core:core-ktx:$rootProject.androidxCoreKtxVersion"
+
+    // Android Jetpack
+    implementation "android.arch.work:work-runtime:$rootProject.archWorkVersion"
+    implementation "android.arch.work:work-runtime-ktx:$rootProject.archWorkVersion"
+
+    // Room Database
+    implementation "androidx.room:room-runtime:$rootProject.archRoomVersion"
+    implementation "androidx.room:room-rxjava2:$rootProject.archRoomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.archRoomVersion"
+
+    // Okhttp3
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp3_version"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:$rootProject.okhttp3_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofit_version"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //RxJava Android
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxjava2_version"
+
+    // Dagger core
+    implementation "com.google.dagger:dagger:$rootProject.dagger_version"
+    implementation "com.google.dagger:dagger-android:$rootProject.dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger_version"
+
+    // Others
+    implementation "com.google.code.gson:gson:$rootProject.gson_version"
+    implementation "org.apache.commons:commons-lang3:$rootProject.commonsLang3Version"
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.github.davidmoten:word-wrap:0.1.6'
+    //implementation 'commons-codec:commons-codec:1.13'
+
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+    implementation 'com.github.bhargavms:DotLoader:1.1.1'
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4.1'
+    implementation "com.pnikosis:materialish-progress:$rootProject.pnikosisProgressVersion"
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
+    implementation "com.github.ashokslsk:SquareRatingView:$rootProject.squareRatingVersion"
+    //implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+
+    // Images write/read/cache
+    implementation "com.github.bumptech.glide:annotations:$rootProject.glideVersion"
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+    kapt "androidx.annotation:annotation:$rootProject.androidxAnnotationVersion"
+
+    // Animations
+    // implementation 'com.eftimoff:android-pathview:1.0.8@aar'
+    // implementation "com.github.tarek360.RichPath:animator:$rootProject.richPathVersion"
+    implementation "com.daimajia.easing:library:$rootProject.daimajiaEasingVersion"
+    implementation "com.daimajia.androidanimations:library:$rootProject.daimajiAnimationsVersion"
+    implementation "com.facebook.shimmer:shimmer:$rootProject.facebookShimmerVersion"
+    // implementation 'com.andkulikov:transitionseverywhere:1.7.6'
+    implementation "com.airbnb.android:lottie:$rootProject.airbnbLottie_version"
+
+    // Tink Cryptography API For Android
+    implementation 'com.google.crypto.tink:tink-android:1.3.0-rc1'
+
+    // Modules
+    implementation project(path: ':juliaComponents')
+    implementation project(path: ':juliaUtils')
+    implementation project(path: ':juliaPlayerVideo')
+    implementation project(path: ':firebaseUtils')
+
+    // AndroidTest
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    testImplementation 'org.mockito:mockito-core:2.25.0'
+    //testImplementation 'org.robolectric:robolectric:4.2'
+    androidTestImplementation "androidx.test:runner:$rootProject.androidxRunnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.androidxEspressoVersion"
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+googleServices {
+    disableVersionCheck = true
+}

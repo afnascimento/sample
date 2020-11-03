@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentClick"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="74dp">
+
+    <com.unilever.julia.components.ButtonIconRound
+        android:id="@+id/buttonRound"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/margin_start_24dp"
+        app:btIcRoundBgColor="@color/colorRed"
+        app:btIcRoundTextSize="@dimen/button_text_label_size"
+        app:julTextViewIcon="CLIENTE"
+        app:layout_constraintBottom_toBottomOf="@+id/contentClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contentClick" />
+
+    <include
+        android:id="@+id/contentTextviews"
+        layout="@layout/ipv_recycler_filter_textviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+        app:layout_constraintStart_toEndOf="@+id/buttonRound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:visibility="visible"
+        layout="@layout/button_arrow_right"
+        android:id="@+id/buttonRight"
+        android:layout_width="@dimen/bt_arrow_right_size"
+        android:layout_height="@dimen/bt_arrow_right_size"
+        android:layout_marginEnd="@dimen/margin_end_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contentTextviews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contentTextviews" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_separator_height"
+        android:background="@color/colorStrokeGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.unilever.julia.components.JuliaAnswerComponent
+            android:id="@+id/julAnswerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:julAnsCompText="@string/text_disambiguation"/>
+
+    <com.unilever.julia.ui.component.JuliaUserChat
+            android:id="@+id/userChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <include layout="@layout/button_round_remove_gray"
+             android:id="@+id/btClose"
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:layout_marginEnd="@dimen/padding_end"
+             android:layout_marginBottom="8dp"
+             android:layout_gravity="end"/>
+
+    <LinearLayout android:id="@+id/contentButtonItems"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <!--
+        <com.unilever.julia.ui.component.ButtonDisambiguation
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:julTextViewIcon="CARTEIRA"
+                app:btDisambText="@string/meu_territorio"/>
+
+        <com.unilever.julia.ui.component.ButtonDisambiguation
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:julTextViewIcon="MAPA"
+                app:btDisambText="@string/outro_territorio"/>
+
+        <com.unilever.julia.ui.component.ButtonDisambiguation
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:julTextViewIcon="LOJA"
+                app:btDisambText="@string/por_cliente"/>
+
+        <com.unilever.julia.ui.component.ButtonDisambiguation
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:julTextViewIcon="COD_BARRAS"
+                app:btDisambText="@string/codigo_do_pedido"/>
+                -->
+
+    </LinearLayout>
+
+</LinearLayout>

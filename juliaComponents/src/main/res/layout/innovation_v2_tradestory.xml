@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_stroke_top_gray"
+    android:paddingStart="@dimen/innovation_v2_margin_start"
+    android:paddingEnd="@dimen/innovation_v2_margin_end"
+    android:paddingTop="@dimen/innovation_v2_margin_top_32dp"
+    android:paddingBottom="@dimen/innovation_v2_margin_bottom_32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/innovation_detail_title"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tradestory"/>
+
+    <include layout="@layout/innovation_v2_tradestory_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/innovation_v2_margin_top_24dp"/>
+
+    <com.unilever.julia.components.TextViewSpannableClick
+        android:visibility="visible"
+        android:id="@+id/tvTextEvaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/tradestory_text_evaluation"
+        android:textColor="@color/colorTextGray"
+        android:textSize="16sp"
+        app:txtViewSpanClick_textColorLink="@color/colorBlue"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="110dp">
+
+    <com.unilever.julia.components.ButtonWrapContent
+            android:id="@+id/btnInovacaoProjetoDetalhe"
+            android:visibility="visible"
+            android:layout_width="104dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            app:btnWrapText="@string/detail"
+            app:btnWrapColor="GRAY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Bold"
+            android:text="@string/canal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/tvCanais"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnInovacaoProjetoDetalhe"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvCanaisValor"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvIconCanal"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextCinza"
+            app:julTextViewIcon="REGRAS_OURO"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/tvCanaisValor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/InovacaoCardTextCinza.Regular"
+            android:text="@string/todos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCanaisValor"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

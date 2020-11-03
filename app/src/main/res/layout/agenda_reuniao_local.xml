@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:id="@+id/tvIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/filtro_cinza_text"
+                app:julTextViewIcon="CLIENTE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                style="@style/julia_filtro_date_title"
+                android:id="@+id/tvTitle"
+                android:text="@string/local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            app:errorTextAppearance="@style/text_input_error_appearance">
+
+        <androidx.appcompat.widget.AppCompatEditText
+                style="@style/julia_filtro_date.agenda_reuniao"
+                android:id="@+id/editLocalReuniao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionDone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contentCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eventos_shape"
+        android:clickable="true"
+        android:focusable="true">
+
+    <View android:id="@+id/juliaStatusCardLineLeft"
+          android:layout_width="3dp"
+          android:layout_height="0dp"
+          android:background="@drawable/prop_line"
+          android:layout_marginStart="12dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faturado"
+            android:textColor="@color/colorGreen"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvStatusDesc"
+            app:layout_constraintTop_toTopOf="@+id/tvStatusIcon"
+            app:layout_constraintBottom_toBottomOf="@+id/tvStatusIcon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pao_acucar"
+            android:textColor="@color/colorGreen"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintStart_toEndOf="@+id/juliaStatusCardLineLeft"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvStatusIcon"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="24dp"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/tvStatusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorGreen"
+            app:julTextViewIcon="FATURADO"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvStatusDesc"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.unilever.julia.components.ButtonWrapContent
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:btnWrapColor="GREEN"
+            app:btnWrapText="@string/detail"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCaixaDesc"
+            app:layout_constraintTop_toTopOf="@+id/tvCaixaDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/tvIconMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/colorGreen"
+            app:julTextViewIcon="VALOR"
+            app:layout_constraintStart_toEndOf="@+id/juliaStatusCardLineLeft"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvCliente"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_pedido"
+            android:textColor="@color/chatJuliaTextColor"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintStart_toEndOf="@+id/tvIconMoney"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/tvIconMoney"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIconMoney"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/tvIconCaixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/colorGreen"
+            app:julTextViewIcon="CAIXA"
+            app:layout_constraintStart_toEndOf="@+id/juliaStatusCardLineLeft" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvIconMoney" android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCaixaValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/chatJuliaTextColor"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintStart_toEndOf="@+id/tvIconCaixa" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/tvIconCaixa"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIconCaixa"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCaixaDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caixas"
+            android:textColor="@color/chatJuliaTextColor"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintStart_toEndOf="@+id/tvCaixaValor"
+            android:layout_marginStart="3dp"
+            app:layout_constraintTop_toTopOf="@+id/tvCaixaValor"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCaixaValor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

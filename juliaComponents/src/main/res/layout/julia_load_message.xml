@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentAlert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="visible"
+        android:id="@+id/imgError"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_julia_load_empty"
+        app:tint="@color/jul_load_icon_bg"/>
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+        android:visibility="gone"
+        android:id="@+id/textViewIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="80sp"
+        android:textColor="@color/jul_load_icon_bg"
+        app:julTextViewIcon="ICON_ERROR_FACE"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/julia_load_empty_filter_title"
+        android:textSize="18sp"
+        android:textColor="@color/jul_load_title"
+        app:fontFamily="@font/roboto_bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/julia_load_empty_filter_text"
+        android:textSize="16sp"
+        android:textColor="@color/jul_load_message"
+        app:fontFamily="@font/roboto_regular"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/julia_load_button"
+        android:id="@+id/btnRefresh"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/julia_load_tentar_nov"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_back"
+        android:id="@+id/toolbar_back"/>
+
+    <!--com.unilever.julia.components.ToolbarBack
+        android:id="@+id/toolbar_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/header_bg"
+        app:toolbarBackTitle="@string/configuracoes"/-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgVoz"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/fundo_opcao_voz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="@string/voz"
+        android:textSize="16sp"
+        android:textColor="#3d4548"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVoz"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgVoz"
+        app:layout_constraintBottom_toBottomOf="@+id/imgVoz"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchVoz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgVoz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgVoz"
+        app:layout_constraintVertical_bias="0.392"
+        app:track="@drawable/switch_background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgOutlook"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/fundo_opcao_voz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVoz"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="@string/avisos_outlook"
+        android:textSize="16sp"
+        android:textColor="#3d4548"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOutlook"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgOutlook"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOutlook"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchOutlook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOutlook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgOutlook"
+        app:layout_constraintVertical_bias="0.392"
+        app:track="@drawable/switch_background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIPV"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/fundo_opcao_voz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgOutlook"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="@string/avisos_ipv"
+        android:textSize="16sp"
+        android:textColor="#3d4548"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPedidos"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgIPV"
+        app:layout_constraintBottom_toBottomOf="@+id/imgIPV"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchIPV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgIPV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgIPV"
+        app:layout_constraintVertical_bias="0.392"
+        app:track="@drawable/switch_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

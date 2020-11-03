@@ -1,0 +1,26 @@
+<resources>
+    <!-- disambiguation -->
+    <dimen name="disambiguation_ic_size">16sp</dimen>
+    <dimen name="disambiguation_bt_round_width">40dp</dimen>
+    <dimen name="disambiguation_bt_round_height">40dp</dimen>
+
+    <!-- status pedido carteira -->
+    <dimen name="status_ped_carteira_progress_width">180dp</dimen>
+    <dimen name="status_ped_carteira_progress_width_2chars_min">20dp</dimen>
+    <dimen name="status_ped_carteira_progress_width_3chars_min">25dp</dimen>
+    <dimen name="status_ped_carteira_progress_width_4chars_min">28dp</dimen>
+    <dimen name="status_ped_carteira_progress_width_5chars_min">35dp</dimen>
+    <dimen name="status_ped_carteira_progress_width_6chars_min">45dp</dimen>
+    <dimen name="status_ped_carteira_progress_height">25dp</dimen>
+    <dimen name="status_ped_carteira_progress_height_stroke">3dp</dimen>
+    <dimen name="status_ped_carteira_top_margin_start">156dp</dimen>
+
+    <!-- Clientes -->
+    <dimen name="clientes_bt_percent_size">55dp</dimen>
+    <dimen name="clientes_text_percent_size">14sp</dimen>
+    <dimen name="clientes_text_name_size">14sp</dimen>
+
+    <!-- Notificação -->
+    <dimen name="notificacao_badge_percent_size">10dp</dimen>
+
+</resources>

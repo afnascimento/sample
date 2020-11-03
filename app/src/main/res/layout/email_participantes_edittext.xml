@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+    <RelativeLayout
+            android:id="@+id/contentEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/busca_height"
+            android:background="@drawable/bg_email_edittext">
+
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:textColor="@color/filtro_cinza2_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_toStartOf="@+id/btnRemove"/>
+
+        <include layout="@layout/button_round_remove_gray"
+                 android:id="@+id/btnRemove"
+                 android:layout_height="22dp"
+                 android:layout_width="22dp"
+                 android:layout_marginStart="15dp"
+                 android:layout_marginEnd="15dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/text_input_error_appearance"
+            android:id="@+id/textRequired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/email_invalido"
+            android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "889036790661",
+    "firebase_url": "https://julia-frontier.firebaseio.com",
+    "project_id": "julia-frontier",
+    "storage_bucket": "julia-frontier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889036790661:android:9ed8e42669da6436",
+        "android_client_info": {
+          "package_name": "com.unilever.julia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADY9cWR_2DSDkaZMslMNfV8888sE0FTV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889036790661-4t69po0psaecs6cd8k39ctb1urf115tv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unilever.juliaDev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889036790661:android:4416eee95d09ab51",
+        "android_client_info": {
+          "package_name": "com.unilever.julia.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADY9cWR_2DSDkaZMslMNfV8888sE0FTV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889036790661-4t69po0psaecs6cd8k39ctb1urf115tv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unilever.juliaDev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889036790661:android:7c77dae4704b5f23",
+        "android_client_info": {
+          "package_name": "com.unilever.julia.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADY9cWR_2DSDkaZMslMNfV8888sE0FTV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889036790661-h7j4stu4mfkaor9jb5d7n03aeej56pfp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889036790661-4t69po0psaecs6cd8k39ctb1urf115tv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unilever.juliaDev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

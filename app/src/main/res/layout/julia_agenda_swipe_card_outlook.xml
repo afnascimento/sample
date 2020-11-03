@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/contentMain"
+        android:layout_height="@dimen/julia_agenda_swipe_height"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:layout_marginBottom="@dimen/padding_bottom_agenda">
+
+    <include layout="@layout/julia_agenda_swipe_left"
+             android:id="@+id/drag_item"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+</RelativeLayout>

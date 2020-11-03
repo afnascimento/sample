@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="gone"
+        android:id="@+id/imgBanner"
+        android:layout_width="327dp"
+        android:layout_height="286dp"
+        android:scaleType="fitCenter"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="visible"
+        android:id="@+id/imgAvatar"
+        android:layout_width="82dp"
+        android:layout_height="90dp"
+        android:src="@drawable/avatar_julia"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/header_hello"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextInicioCinza"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/inicio_boas_vindas1"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextInicioCinza"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/inicio_boas_vindas2"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextInicioCinza"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/emoji_smiling"/>
+
+    </LinearLayout>
+
+</LinearLayout>

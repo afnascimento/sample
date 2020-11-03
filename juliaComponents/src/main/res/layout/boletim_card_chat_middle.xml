@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentMiddle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+     <androidx.appcompat.widget.AppCompatTextView
+         android:id="@+id/tvHeaderDescription"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="9dp"
+         android:gravity="center"
+         android:text="@string/estimativa"
+         android:textColor="@color/colorTextGray1"
+         android:textSize="14sp"
+         app:fontFamily="@font/roboto_regular"/>
+
+     <androidx.appcompat.widget.AppCompatTextView
+         android:id="@+id/tvHeaderValue"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="@string/_14_000_000_00"
+         android:textColor="@color/colorTextGray1"
+         android:textSize="16sp"
+         app:fontFamily="@font/roboto_bold"/>
+
+     <androidx.appcompat.widget.AppCompatTextView
+         android:id="@+id/tvHeaderPercentage"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="@string/_31_93_dos_dias_transcorridos"
+         android:textColor="@color/colorTextGray2"
+         android:textSize="12sp"
+         app:fontFamily="@font/roboto_regular"/>
+
+     <com.unilever.julia.components.boletim.BoletimViewPercentage
+         android:id="@+id/percentEntradaDia"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <com.unilever.julia.components.boletim.BoletimViewPercentage
+         android:id="@+id/percentEntrada"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <com.unilever.julia.components.boletim.BoletimViewPercentage
+         android:id="@+id/percentFaturado"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+</LinearLayout>

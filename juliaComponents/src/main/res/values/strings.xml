@@ -1,0 +1,161 @@
+<resources>
+    <string name="inovation_title">Home Care</string>
+    <string name="inovation_projects">21 projetos</string>
+    <string name="inovation_projects_">%s projetos</string>
+    <string name="inovacao">Inovação</string>
+    <string name="novo">Novo!</string>
+    <string name="julia_chat_msg">Estou aqui para te ajudar com as seguintes informações:</string>
+    <string name="clique_para_ver">Clique para ver</string>
+    <string name="text_copy_paste">texto copiado</string>
+
+    <string name="button_horizontal_items">
+        <![CDATA[
+        [
+        {\"icon\":\"e90d\", \"color\": \"00A9E0\", \"text\": \"Pedidos\", \"faixa\": true},
+        {\"icon\":\"e90a\", \"color\": \"00A9E0\", \"text\": \"Inovações\"},
+        {\"icon\":\"e900\", \"color\": \"00A9E0\", \"text\": \"IPV\", \"faixa\": true},
+        {\"icon\":\"e900\", \"color\": \"00A9E0\", \"text\": \"Agenda\"}
+        ]
+        ]]>
+    </string>
+    <string name="innovation_horizontal_items">
+        <![CDATA[
+        [
+        {\"icon\":\"e913\", \"color\": \"9CA7AC\", \"text\": \"HOME CARE\", \"projects\": \"18\"},
+        {\"icon\":\"e90d\", \"color\": \"9CA7AC\", \"text\": \"PERSONAL CARE\", \"projects\": \"28\"},
+        {\"icon\":\"e912\", \"color\": \"9CA7AC\", \"text\": \"FOODS\", \"projects\": \"14\"},
+        {\"icon\":\"e914\", \"color\": \"9CA7AC\", \"text\": \"ICE CREAM\", \"projects\": \"14\"}
+        ]
+        ]]>
+    </string>
+    <string name="button_wrap_text">Enviar</string>
+
+    <string name="home_care">Home Care</string>
+    <string name="projects">Projetos:</string>
+    <string name="num_projects">21</string>
+    <string name="detail">Detalhe</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="notificacoes">Notificações</string>
+
+    <string name="innovation_help_text">Claro, vamos lá! Qual aréa de négocio gostaria de ver?</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="tradestory_num_downloads">25 downloads</string>
+    <string name="tradestory_downloads">%s downloads</string>
+    <string name="tradestory">Tradestory</string>
+    <string name="tradestory_text_click">
+        <![CDATA[
+        Após baixar e ler o conteúdo, por favor, dê a sua nota para esse Trade Story <link>clicando aqui<link/>.
+        ]]>
+    </string>
+    <string name="tradestory_text_evaluation">
+        <![CDATA[
+        Esta é uma nova versão do Trade Story deste projeto, faça o download e <link>avalie o material<link/>,
+        dessa forma, você ajudará a categoria a construir o que há de melhor em Trade Stories!
+        ]]>
+    </string>
+    <string name="tradestory_download_notfound">Nenhum arquivo encontrado!</string>
+    <string name="tradestory_download_invalid_url">URL inválida!</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="kibon_m_m_s"><![CDATA[Kibon M&M’s]]></string>
+    <string name="loren_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</string>
+    <string name="midias">Mídias</string>
+
+    <string name="midias_innovations_items">
+        <![CDATA[
+        [
+        {\"title\":\"Kibon\", \"description\": \"Video de Teste\", \"url\": \"https://juliajobfunction.blob.core.windows.net/innovations/Midias/venda_cremogema.mp4\"},
+        {\"title\":\"Kibon\", \"description\": \"Video de Teste\", \"url\": \"https://juliajobfunction.blob.core.windows.net/innovations/Midias/venda_cremogema.mp4\"},
+        {\"title\":\"Kibon\", \"description\": \"Video de Teste\", \"url\": \"https://juliajobfunction.blob.core.windows.net/innovations/Midias/venda_cremogema.mp4\"}
+        ]
+        ]]>
+    </string>
+    <string name="logista">Lojista</string>
+    <string name="consumidor">Consumidor</string>
+    <string name="planograma">Planograma</string>
+    <string name="_9">+9</string>
+    <string name="faseamento">Faseamento</string>
+    <string name="_50">50%</string>
+    <string name="ipv_progress_text">Você precisa vender 5 toneladas até 23/06</string>
+    <string name="commodity_text">FR\nMT</string>
+
+    <string name="code_client_text">0010587057 - Cristina Lour…</string>
+    <string name="address_client_text">São Paulo - SP - Imigrantes</string>
+    <string name="ipv_score_text">Repres Priori Comm: 50%</string>
+    <string name="ipv_score">Repres Priori Comm: %s</string>
+
+    <string name="_100porcent">100%</string>
+    <string name="_99porcent">99.99%</string>
+
+    <string name="buscar_clientes">Buscar clientes</string>
+    <string name="buscar_commodities">Buscar commodities</string>
+    <string name="ean_code">EAN 7506306244177</string>
+    <string name="omo_dt_po_antibac_9x1_8kg">Omo DT PO Antibac 9x1.8Kg</string>
+    <string name="ean_7506306244177">EAN 7506306244177</string>
+
+    <!-- julia load errors -->
+    <string name="julia_load_tentar_nov">Tentar Novamente</string>
+
+    <string name="julia_load_offline_title">Parece que não há internet</string>
+    <string name="julia_load_offline_text">Confira se o seu celular está conectado á\ninternet e tente novamente.</string>
+
+    <string name="julia_load_timeout_title">Opa!</string>
+    <string name="julia_load_timeout_text">Há algo de errado com os servidores,\ntente novamente em alguns minutos.</string>
+
+    <string name="julia_load_empty_title">Opa!</string>
+    <string name="julia_load_empty_text">Não há nenhum item disponível\nno momento.</string>
+
+    <string name="julia_load_empty_filter_title">Nenhum resultado encontrado.</string>
+    <string name="julia_load_empty_filter_title_with_word">Nenhum resutado encontrado\npara “%s”.</string>
+    <string name="julia_load_empty_filter_text">Confira se você digitou corretamente ou\ntente usar outra palavra-chave.</string>
+    <string name="julia_load_empty_filter_clear">Limpar filtros</string>
+
+    <string name="julia_load_generic_title">Erro ocorrido</string>
+    <string name="julia_load_generic_text">Desculpe ocorreu um erro inesperado, tente novamente.</string>
+    <string name="_0010587057">0010587057</string>
+    <string name="carrefour_supermercados_s_o_paulo_ltda">Carrefour Supermercados São Paulo LTDA</string>
+    <string name="maioneses">Maioneses</string>
+    <string name="cordenador">Cordenador</string>
+    <string name="jo_o_paulo_cardoso_neiva">João Paulo Cardoso Neiva</string>
+    <string name="distrito">Distrito:</string>
+    <string name="distrito_559">Distrito 559</string>
+    <string name="vendedor">Vendedor</string>
+    <string name="_0010587057_coop_de_consumo_segunda_linha">0010587057 - Cooperativa de Consumo Segunda linha Omo Amaciantes</string>
+    <string name="filial_bh_001">Filial BH 001</string>
+    <string name="meta_70">Meta: 70%</string>
+    <string name="fernando_sousa">Fernando Sousa</string>
+    <string name="score_75_24">Score: 75,24%</string>
+    <string name="positiva_o">Positivação</string>
+    <string name="bh_001">BH 001</string>
+    <string name="_separator">|</string>
+    <string name="_score">Score:</string>
+    <string name="_meta">Meta:</string>
+    <string name="territorio_000372">Território 000372</string>
+    <string name="filtros">Filtros</string>
+    <string name="entrada_dia">Entrada/dia</string>
+    <string name="atualizado_hoje">Atualizado hoje às 15:12</string>
+    <string name="_14_000_000_00">14.000.000,00</string>
+    <string name="estimativa">Estimativa</string>
+    <string name="_31_93_dos_dias_transcorridos">31.93% dos dias transcorridos</string>
+    <string name="redefinir_filtros">Redefinir filtros</string>
+    <string name="niv">NIV</string>
+    <string name="ton">TON</string>
+    <string name="refinar">REFINAR</string>
+    <string name="ordernar">ORDERNAR</string>
+
+    <!-- BoletimCardProgress -->
+    <string name="territory_bulletin">Território %s</string>
+    <string name="district_bulletin">Distrito %s</string>
+    <string name="regional_bulletin">Regional %s</string>
+    <string name="subsidiary_bulletin">Filial %s</string>
+
+    <string name="header_percentage">%s dos dias transcorridos</string>
+    <string name="area_de_atendimento">Área de atendimento</string>
+    <string name="todos">Todos</string>
+    <string name="categoria">Categoria</string>
+    <string name="filtros_canal_categoria_cliente">FILTROS: CANAL | CATEGORIA | CLIENTE</string>
+    <string name="filtros_boletim">FILTROS: %s</string>
+
+    <string name="bulletin_tag_with_territory">TER - 0010 - ANDRE FREITAS DO NASCIMENTO</string>
+
+</resources>

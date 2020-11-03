@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Androidx
+    implementation "com.google.android.material:material:$rootProject.googleMaterialVersion"
+    implementation "androidx.annotation:annotation:$rootProject.androidxAnnotationVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.androidxAppcompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.androidxRecyclerviewVersion"
+    implementation "androidx.cardview:cardview:$rootProject.androidxCardviewVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxConstraintlayoutVersion"
+    implementation "androidx.core:core-ktx:$rootProject.androidxCoreKtxVersion"
+
+    // Others
+    implementation "com.google.code.gson:gson:$rootProject.gson_version"
+    implementation "org.apache.commons:commons-lang3:$rootProject.commonsLang3Version"
+    implementation "com.github.ashokslsk:SquareRatingView:$rootProject.squareRatingVersion"
+    implementation "com.pnikosis:materialish-progress:$rootProject.pnikosisProgressVersion"
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation "com.andkulikov:transitionseverywhere:$rootProject.transitionseverywhere_version"
+
+    // Animations
+    //implementation "com.github.tarek360.RichPath:animator:$rootProject.richPathVersion"
+    implementation "com.daimajia.easing:library:$rootProject.daimajiaEasingVersion"
+    implementation "com.daimajia.androidanimations:library:$rootProject.daimajiAnimationsVersion"
+    implementation "com.facebook.shimmer:shimmer:$rootProject.facebookShimmerVersion"
+    //implementation 'com.github.bhargavms:DotLoader:1.1.1'
+    implementation "com.airbnb.android:lottie:$rootProject.airbnbLottie_version"
+
+    // tags
+    implementation 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+
+    // Modules
+    implementation project(path: ':juliaUtils')
+    implementation project(path: ':juliaPlayerVideo')
+
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation "androidx.test:runner:$rootProject.androidxRunnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.androidxEspressoVersion"
+}

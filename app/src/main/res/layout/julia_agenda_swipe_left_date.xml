@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/julia_agenda_swipe_data_widht"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAno"
+            android:text="2018"
+            android:textSize="8sp"
+            android:textColor="@color/colorStrokeGray"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDia"
+            android:text="21"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextCinza"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMes"
+            android:text="FEV"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextCinza"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_start"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:layout_marginBottom="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleButtonsFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consegui_te_ajudar"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/feedback_blue1"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <include layout="@layout/feedback_button_like"
+             android:id="@+id/btnLike"
+             android:layout_width="@dimen/feedback_button_size"
+             android:layout_height="@dimen/feedback_button_size"
+             app:layout_constraintStart_toEndOf="@+id/tvTitleButtonsFeedback"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginStart="24dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginBottom="8dp"/>
+
+    <include layout="@layout/feedback_button_dislike"
+             android:id="@+id/btnDislike"
+             android:layout_width="@dimen/feedback_button_size"
+             android:layout_height="@dimen/feedback_button_size"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/btnLike"
+             android:layout_marginStart="24dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginBottom="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

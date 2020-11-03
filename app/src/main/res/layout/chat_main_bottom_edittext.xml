@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentBottomEdittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_chat_main_bottom">
+
+    <include layout="@layout/button_close_input_text"
+             android:id="@+id/btCloseInputText"
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:layout_marginStart="14dp"
+             android:layout_alignBottom="@+id/editInputText"
+             android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextFont"
+            android:id="@+id/editInputText"
+            android:background="@drawable/edittext_chat_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:hint="@string/edittext_chat_hint"
+            android:layout_toStartOf="@+id/btnButtonsChat"
+            android:layout_toEndOf="@+id/btCloseInputText"/>
+
+    <com.unilever.julia.ui.component.ChatButtonsEditText
+            android:id="@+id/btnButtonsChat"
+            android:layout_width="@dimen/buttons_chat_size"
+            android:layout_height="@dimen/buttons_chat_size"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/editInputText"/>
+
+</RelativeLayout>

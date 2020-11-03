@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/contentItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_white_stroke_bottom_gray"
+        android:elevation="4dp">
+
+        <!--
+        <include layout="@layout/ipv_tab_button"/>
+        <include layout="@layout/ipv_tab_button"/>
+        <include layout="@layout/ipv_tab_button"/>
+        <include layout="@layout/ipv_tab_button"/>
+        -->
+
+    </LinearLayout>
+
+</HorizontalScrollView>

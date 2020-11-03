@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/julia_agenda_swipe_height"
+        android:layout_marginBottom="5dp">
+
+    <include layout="@layout/julia_agenda_swipe_left_date"
+             android:id="@+id/contentData"
+             android:layout_width="@dimen/julia_agenda_swipe_data_widht"
+             android:layout_height="match_parent"/>
+
+    <include layout="@layout/julia_agenda_swipe_left_card"
+             android:id="@+id/contentSwipeCard"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_toEndOf="@+id/contentData"
+             android:background="?android:attr/selectableItemBackgroundBorderless"
+             android:clickable="true"
+             android:focusable="true"/>
+
+</RelativeLayout>

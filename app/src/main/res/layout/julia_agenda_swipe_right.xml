@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/julia_agenda_swipe_height"
+        android:orientation="horizontal">
+
+    <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@color/agenda_bt_red"
+            android:gravity="end">
+
+        <RelativeLayout
+                android:id="@+id/btnCancelar"
+                android:layout_width="@dimen/julia_agenda_swipe_bt_widht"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+            <include layout="@layout/julia_agenda_swipe_bt_red" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/btnConcluir"
+            android:layout_width="@dimen/julia_agenda_swipe_bt_widht"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+        <include layout="@layout/julia_agenda_swipe_bt_green" />
+
+    </RelativeLayout>
+
+</LinearLayout>

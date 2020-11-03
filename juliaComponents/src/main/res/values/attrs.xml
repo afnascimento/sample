@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BubblePageIndicator">
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="bpi_fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="bpi_pageColor" format="color" />
+        <!-- Radius of the circles. -->
+        <attr name="bpi_radius" format="dimension" />
+        <!-- Margin between the circles. -->
+        <attr name="bpi_marginBetweenCircles" format="dimension" />
+        <!-- On surface circles count -->
+        <attr name="bpi_onSurfaceCount" format="integer" />
+        <!-- Rising circles count -->
+        <attr name="bpi_risingCount" format="integer" />
+        <!-- Default style -->
+        <attr name="bpi_indicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonBooleanCheck">
+        <attr name="btnBoolean_textLeft" format="string"/>
+        <attr name="btnBoolean_textRight" format="string"/>
+        <attr name="btnBoolean_textChecked" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InnovationDescription">
+        <attr name="innoDesc_isTopStroke" format="boolean"/>
+        <attr name="innoDesc_title" format="string"/>
+        <attr name="innoDesc_description" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="InnovationBeneficio">
+        <attr name="innoBen_isTopStroke" format="boolean"/>
+        <attr name="innoBen_title" format="string"/>
+        <attr name="innoBen_description" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarBack">
+        <attr name="toolbarBackTitle" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlantedTextView">
+        <attr name="slantedTextSize" format="dimension"/>
+        <attr name="slantedBackgroundColor" format="color"/>
+        <attr name="slantedText" format="string"/>
+        <attr name="slantedTextColor" format="color"/>
+        <attr name="slantedLength" format="dimension"/>
+        <attr name="slantedMode" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="right_bottom" value="3" />
+            <enum name="left_triangle" value="4" />
+            <enum name="right_triangle" value="5" />
+            <enum name="left_bottom_triangle" value="6" />
+            <enum name="right_bottom_triangle" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="julTextViewIcon" format="enum">
+        <enum name="FOODS_2" value="0"/>
+        <enum name="HOME_CARE" value="1"/>
+        <enum name="ICE_CREAM" value="2"/>
+        <enum name="ATENCAO" value="3"/>
+        <enum name="ATRASADO" value="4"/>
+        <enum name="PROJETO" value="5"/>
+        <enum name="AGENDA" value="6"/>
+        <enum name="REGRAS_OURO" value="7"/>
+        <enum name="TITULO" value="8"/>
+        <enum name="CLIENTE" value="9"/>
+        <enum name="FATURADO" value="10"/>
+        <enum name="PENDENTE" value="11"/>
+        <enum name="ANULADO" value="12"/>
+        <enum name="VALOR" value="13"/>
+        <enum name="CAIXA" value="14"/>
+        <enum name="CONFIGURACAO" value="15"/>
+        <enum name="SAIR" value="16"/>
+        <enum name="TERMOSDEUSO" value="17"/>
+        <enum name="OUTLOOK" value="18"/>
+        <enum name="CALENDARIO" value="19"/>
+        <enum name="HORARIO" value="20"/>
+        <enum name="USUARIO" value="21"/>
+        <enum name="LIKE" value="22"/>
+        <enum name="LIKE_SELECT" value="23"/>
+        <enum name="DISLIKE" value="24"/>
+        <enum name="DISLIKE_SELECT" value="25"/>
+        <enum name="CARTEIRA" value="26"/>
+        <enum name="MAPA" value="27"/>
+        <enum name="LOJA" value="28"/>
+        <enum name="COD_BARRAS" value="29"/>
+        <enum name="IPV" value="30"/>
+        <enum name="NOTIFICACAO" value="31"/>
+        <enum name="ICON_KG" value="32"/>
+        <enum name="ICON_CLAP" value="33"/>
+        <enum name="ICON_WAIT" value="34"/>
+        <enum name="ICON_ATENTION" value="35"/>
+        <enum name="ICON_ERROR_FACE" value="36"/>
+        <enum name="ICON_OUT_SERVER" value="37"/>
+    </attr>
+
+    <declare-styleable name="JuliaTextViewIcon">
+        <attr name="julTextViewIcon"/>
+    </declare-styleable>
+
+    <declare-styleable name="JuliaAnswerComponent">
+        <attr name="julAnsCompText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonAlertPush">
+        <attr name="btAlertPushTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonIconRound">
+        <attr name="julTextViewIcon"/>
+        <attr name="btIcRoundBgColor" format="color"/>
+        <attr name="btIcRoundTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonTextRound">
+        <attr name="btTextValue" format="string"/>
+        <attr name="btTextPercent" format="float"/>
+        <attr name="btTextBgColor" format="color"/>
+        <attr name="btTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonHorizontal">
+        <attr name="julTextViewIcon"/>
+        <attr name="btHorCompText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonInnovationHorizontal">
+        <attr name="julTextViewIcon"/>
+        <attr name="btivText" format="string"/>
+        <attr name="btivProjects" format="integer"/>
+        <attr name="btivLayout" format="enum">
+            <enum name="ONE" value="0"/>
+            <enum name="MULTIPLE" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonWrapContent">
+        <attr name="btnWrapText" format="string"/>
+        <attr name="btnWrapColor" format="enum">
+            <enum name="RED" value="0"/>
+            <enum name="GREEN" value="1"/>
+            <enum name="ORANGE" value="2"/>
+            <enum name="GRAY" value="3"/>
+            <enum name="BLUE" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewSpannableClick">
+        <attr name="txtViewSpanClick_textColorLink" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonsBottom">
+        <attr name="btnBottomTextLeft" format="string"/>
+        <attr name="btnBottomTextRight" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ButtonIconBadge">
+        <attr name="btnIcBdEnabled" format="boolean"/>
+        <attr name="btnIcBdIcon" format="reference"/>
+        <attr name="btnIcBdText" format="string"/>
+        <attr name="btnIcBdTextColor" format="color"/>
+        <attr name="btnIcBdEnabledColor" format="color"/>
+        <attr name="btnIcBdDisabledColor" format="color"/>
+        <attr name="btnIcBdIconVisible" format="boolean"/>
+        <attr name="btnIcBdBadgeVisible" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="JuliaFiltroTabs">
+        <attr name="julFilTabLeftText" format="string"/>
+        <attr name="julFilTabRightText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BoletimFiltroItem">
+        <attr name="bolFtTitle" format="string"/>
+        <attr name="bolFtSelected" format="string"/>
+    </declare-styleable>
+
+</resources>

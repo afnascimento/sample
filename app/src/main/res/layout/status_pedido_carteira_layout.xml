@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.unilever.julia.components.JuliaAnswerComponent
+            android:id="@+id/julAnswerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:julAnsCompText="@string/status_pedido_carteira_text"/>
+
+    <include layout="@layout/status_pedido_carteira_card"
+             android:id="@+id/contentCard"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/padding_start"
+             android:layout_marginEnd="@dimen/padding_end"
+             android:layout_marginBottom="24dp"/>
+
+</LinearLayout>

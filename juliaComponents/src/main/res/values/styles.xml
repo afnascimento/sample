@@ -1,0 +1,122 @@
+<resources>
+
+    <style name="EditTextFont">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorFontEditTextChat</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="EditTextFont.Filter">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:drawableEnd">@drawable/ic_search</item>
+    </style>
+
+    <!-- progress bar -->
+    <style name="progressbar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/bg_progress</item>
+    </style>
+
+    <style name="tabs_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="tabs_text.inactive">
+        <item name="android:textColor">@color/filtro_cinza_text</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="tabs_text.active">
+        <item name="android:textColor">@color/filtro_blue_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="BubblePagerIndicator">
+        <item name="bpi_fillColor">@color/default_bubble_indicator_fill_color</item>
+        <item name="bpi_pageColor">@color/default_bubble_indicator_page_color</item>
+        <item name="bpi_radius">@dimen/default_bubble_indicator_radius</item>
+        <item name="bpi_marginBetweenCircles">@dimen/default_bubble_indicator_circles_margin</item>
+        <item name="bpi_onSurfaceCount">@integer/default_bubble_indicator_on_surface_count</item>
+        <item name="bpi_risingCount">@integer/default_bubble_indicator_rising_count</item>
+    </style>
+
+    <style name="ToolbarBackTitle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="DialogProgress" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="InovacaoCardTextCinza">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextInovacaoCinza</item>
+    </style>
+    <style name="InovacaoCardTextCinza.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="InovacaoCardTextCinza.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BooleanButton_Enabled">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/booleanButtonTextEnabled</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:background">@drawable/bg_boolean_enabled</item>
+    </style>
+    <style name="BooleanButton_Disabled">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/booleanButtonTextDisabled</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:background">@drawable/bg_boolean_disabled</item>
+    </style>
+
+    <!-- InnovationV2 -->
+    <style name="innovation_detail_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="innovation_detail_description">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ButtonsBottom">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="ButtonsBottom.blue">
+        <item name="android:background">@drawable/bg_button_blue</item>
+    </style>
+    <style name="ButtonsBottom.gray">
+        <item name="android:background">@drawable/bg_button_gray</item>
+    </style>
+
+    <!-- Julia Load -->
+    <style name="julia_load_image_text_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/jul_load_title</item>
+    </style>
+    <style name="julia_load_image_text_message">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/jul_load_message</item>
+    </style>
+    <style name="julia_load_button">
+        <item name="android:background">@drawable/bg_button_blue</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ipv_content_round">
+
+    <LinearLayout android:id="@+id/content1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="13dp"
+                  android:layout_centerHorizontal="true"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical">
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextCinza"
+                android:textSize="20sp"
+                app:julTextViewIcon="IPV"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/alcancado"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorTextCinza"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/_99porcent"
+            android:textSize="34sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorGreen"
+            android:layout_below="@+id/content1"/>
+
+    <View android:id="@+id/viewStroke"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:layout_marginTop="13dp"
+          android:layout_marginStart="9dp"
+          android:layout_marginEnd="9dp"
+          android:layout_below="@+id/tvScore"
+          android:background="@color/colorTextCinza"/>
+
+    <LinearLayout android:id="@+id/content2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="13dp"
+                  android:layout_below="@+id/viewStroke"
+                  android:layout_centerHorizontal="true"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meta_ipv"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorTextCinza2"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:text="@string/_100porcent"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorTextCinza2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

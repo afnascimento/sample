@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.unilever.julia.components.JuliaAnswerComponent
+            android:id="@+id/julAnswerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:julAnsCompText="@string/julia_chat_msg"/>
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+        <LinearLayout android:id="@+id/contentButtonItems"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="24dp">
+
+            <!--
+            <com.unilever.julia.components.ButtonInnovationHorizontal
+                    android:layout_width="@dimen/button_innovation_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="83dp"
+                    app:julTextViewIcon="HOME_CARE"
+                    app:btivLayout="MULTIPLE"
+                    app:btivProjects="15"
+                    app:btivText="@string/home_care"/>
+
+            <com.unilever.julia.components.ButtonInnovationHorizontal
+                    android:layout_width="@dimen/button_innovation_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    app:julTextViewIcon="HOME_CARE"
+                    app:btivLayout="MULTIPLE"
+                    app:btivProjects="15"
+                    app:btivText="@string/home_care"/>
+
+            <com.unilever.julia.components.ButtonInnovationHorizontal
+                    android:layout_width="@dimen/button_innovation_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    app:julTextViewIcon="HOME_CARE"
+                    app:btivLayout="MULTIPLE"
+                    app:btivProjects="15"
+                    app:btivText="@string/home_care"
+                    android:visibility="gone"/>
+                    -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

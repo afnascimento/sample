@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="5dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text1"
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_de"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text2"
+            android:id="@+id/tvTotalPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_de_pedidos"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_text1"
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pedidos"/>
+
+</LinearLayout>

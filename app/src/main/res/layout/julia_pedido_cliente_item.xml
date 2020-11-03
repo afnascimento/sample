@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/contentClick">
+
+    <include layout="@layout/julia_pedido_cliente_round"
+             android:id="@+id/btnRound"
+             android:layout_width="@dimen/ped_cliente_it_size"
+             android:layout_height="@dimen/ped_cliente_it_size"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             android:layout_marginStart="@dimen/padding_start"
+             android:layout_marginBottom="8dp"
+             app:layout_constraintBottom_toTopOf="@+id/stroke"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvData"
+            android:text="22/01/2019"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextCinza"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvNumPedido"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/btnRound"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvValor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNumPedido"
+            android:text="12663552"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextCinza"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvData"
+            app:layout_constraintStart_toEndOf="@+id/btnRound"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvValor"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/stroke"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvValor"
+            android:text="R$90.000,00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextCinza"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/stroke"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="@color/colorStrokeGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/padding_end"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/appCompatImageView"
+            app:layout_constraintBottom_toTopOf="@+id/stroke"/>
+
+    <View android:id="@+id/stroke"
+          android:layout_width="0dp"
+          android:layout_height="0.5dp"
+          android:background="@color/colorStrokeGray"
+          android:layout_marginEnd="@dimen/padding_start"
+          android:layout_marginStart="@dimen/padding_end"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

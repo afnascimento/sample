@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F97D2</color>
+    <color name="colorPrimaryDark">#1F97D2</color>
+    <color name="colorAccent">#1F97D2</color>
+
+    <color name="colorChatBg">#F0F2F3</color>
+    <color name="colorSplashBlue">#1F97D2</color>
+
+    <!-- generic colors   -->
+    <color name="colorGray">#9CA7AC</color>
+    <color name="colorGreen">#78BE20</color>
+    <color name="colorOrange">#F0B331</color>
+    <color name="colorRed">#DA2C27</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#00a9e0</color>
+    <color name="colorBlue2">#71C5E8</color>
+    <color name="colorBluePush">#005EB8</color>
+    <color name="colorTextGray1">#3D4548</color>
+    <color name="colorTextGray2">#9ca7ac</color>
+    <color name="colorDisabled">#D0D8DB</color>
+
+    <!-- RatingBar -->
+    <color name="ratingColorNormalWhite">#FFFFFF</color>
+    <color name="ratingColorNormalGray">#9ca7ac</color>
+    <color name="ratingColorActivatedYellow">#FFDC2D</color>
+    <color name="ratingColorActivatedBlue">#71C5E8</color>
+
+    <!-- TextViewSpannableLink -->
+    <color name="spannableLink_TextColorLink">#71C5E8</color>
+
+    <!-- Faixa Novo -->
+    <color name="faixaNovoColorText">#FFFFFF</color>
+    <color name="faixaNovoColorBg">#CEDC00</color>
+
+    <!-- boolean buttons -->
+    <color name="booleanButtonEnabled">#71C5E8</color>
+    <color name="booleanButtonDisabled">#FFFFFF</color>
+    <color name="booleanButtonTextEnabled">#FFFFFF</color>
+    <color name="booleanButtonTextDisabled">#9CA7AC</color>
+
+    <!-- Tabs -->
+    <color name="tabSelectedColor">#71C5E8</color>
+    <color name="tabTextColor">#9CA7AC</color>
+
+    <!-- Stroke -->
+    <color name="colorStrokeGray">#9ca7ac</color>
+
+    <color name="colorOverlay">#6071C5E8</color>
+
+    <color name="colorTextCinza">#3D4548</color>
+    <color name="colorTextCinza2">#9CA7AC</color>
+    <color name="colorTextCinza3">#9AA7AD</color>
+    <color name="colorTextGray">#9CA7AC</color>
+    
+    <color name="colorTextInicioCinza">#3D4548</color>
+
+    <color name="colorTextInovacaoCinza">#3D4548</color>
+
+    <color name="colorStrokeEditTextChat">#8E8E93</color>
+    <color name="colorFontEditTextChat">#8E8E93</color>
+
+    <!-- User colors -->
+    <color name="chatUserColor">#0085ca</color>
+    <color name="chatUserTextColor">#ffffff</color>
+
+    <!-- filtro -->
+    <color name="filtro_blue_accent">#00A9E0</color>
+    <color name="filtro_cinza_text">#9CA7AC</color>
+    <color name="filtro_cinza2_text">#3D4548</color>
+    <color name="filtro_edit_stroke_line">#E6E6E6</color>
+
+    <!-- button component -->
+    <color name="buttonComponentBlue">#00A9E0</color>
+
+    <color name="button_login_text">#00a9e0</color>
+
+    <!-- Julia colors   -->
+    <color name="strokeButtonCard">#00a9e0</color>
+    <color name="buttonCardColor">#faffffff</color>
+    <color name="chatJuliaColor">#ffffff</color>
+    <color name="chatJuliaTextColor">#8e8e93</color>
+
+    <array name="dot_colors">
+        <item>#1F97D2</item>
+        <item>#1F97D2</item>
+        <item>#1F97D2</item>
+    </array>
+    <color name="dot_color">#1F97D2</color>
+
+    <!-- Inovacao -->
+    <color name="inovacaoIconGray">#9CA7AC</color>
+
+    <!-- Effect Ripple -->
+    <color name="colorRipple">#401F97D2</color>
+    <color name="colorRipple2">#409CA7AC</color>
+    <color name="colorRipple3">#ffffff</color>
+
+    <color name="agenda_bt_green">#78BE20</color>
+    <color name="agenda_bt_red">#DA2C27</color>
+
+    <color name="pp_black">#000000</color>
+    <color name="pp_white">#ffffff</color>
+
+    <!-- julia load -->
+    <color name="jul_load_title">#3d4548</color>
+    <color name="jul_load_message">#3d4548</color>
+    <color name="jul_load_icon_bg">#999999</color>
+
+    <!-- busca -->
+    <color name="busca_blue">#71C5E8</color>
+
+    <color name="button_outlook_bg">#005EB8</color>
+
+    <color name="tutorial_color_title">#00A9E0</color>
+    <color name="tutorial_color_description">#9CA7AC</color>
+
+    <color name="tutorial_dots_color">#D8D8D8</color>
+    <color name="tutorial_dots_selected">#00A9E0</color>
+
+    <!--
+    <color name="fcm_push_color">#F4A900</color>
+    -->
+    <color name="fcm_push_color">#F4A900</color>
+
+    <color name="feedback_blue1">#0085ca</color>
+    <color name="feedback_blue2">#00A9E0</color>
+    <color name="feedback_gray">#9CA7AC</color>
+
+    <!-- buttons -->
+    <color name="colorButtonBlue">#00A9E0</color>
+    <color name="colorButtonGreen">#78BE20</color>
+    <color name="colorButtonGray">#9CA7AC</color>
+    <color name="colorButtonBlueLink">#66BEE5</color>
+
+
+    <!-- status pedido carteira -->
+    <color name="statusPedidoCarteiraTop">#9CA7AC</color>
+    <color name="statusPedidoCarteiraLabelGray">#9CA7AC</color>
+    <color name="statusPedidoCarteiraLabelBlack">#3D4548</color>
+
+    <color name="text_color_black">#3D4548</color>
+
+    <color name="autocompleteTextBlue">#00A9E0</color>
+    <color name="autocompleteTextBlack">#3D4548</color>
+
+    <color name="colorMicrophone">#9CA7AC</color>
+
+</resources>

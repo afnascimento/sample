@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_wrap_text"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgSeta"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="2dp"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="@color/colorWhite"/>
+
+</LinearLayout>

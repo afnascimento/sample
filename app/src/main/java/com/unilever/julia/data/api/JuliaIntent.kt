@@ -1,0 +1,33 @@
+package com.unilever.julia.data.api
+
+class JuliaIntent {
+
+    companion object {
+        const val TEXT = "text"
+        const val CODE = "code"
+    }
+
+    enum class Type(val value: Int) {
+        ANDROID(1), IOS(2)
+    }
+
+    enum class Intent(val value: String, val text: String) {
+        PREINICIO_31("31_PRE_INICIO", CODE),
+        PREINICIO_27("27_INICIO", TEXT),
+        BANNER_00("00_BANNER", TEXT),
+        NOVIDADES_00("00_NOVIDADES", TEXT),
+        NOTIFICACOES_00("00_NOTIFICACOES", CODE),
+        NOTIFICACAO_ITEM_00("00_NOTIFICACAO_ITEM", TEXT),
+        NOTIFICACOES_LIDO_02("02_NOTIFICACOES_LIDO", TEXT),
+        NOTIFICACOES_DETALHE_03("03_NOTIFICACOES_DETALHE", TEXT),
+        IPV_FASEAMENTO("01_IPV_FASEAMENTO", CODE),
+        IPV_PRIORITARIOS_CLIENTES("02_IPV_PRIORITARIOS", CODE),
+        IPV_FOCO_CLIENTES("06_IPV_CATEGORIAF", CODE),
+        IPV_OFERTAS("09_IPV_OFERTAS", CODE),
+        IPV_POSITIVACAO("13_IPV_POSITIVACAO", CODE),
+        IPV_INOVACAO("11_IPV_INOVACAO", CODE),
+        BOLETIM_MULTIPLE_FILTERS("02_BOLETIM_FILTRO", CODE),
+        BOLETIM_BY_FILTER("03_BOLETIM_FILTRADO", CODE),
+        BOLETIM_ATTENDANCE("04_BOLETIM_FILTRO_CABECALHO", CODE)
+    }
+}

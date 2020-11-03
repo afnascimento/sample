@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <com.unilever.julia.components.innovations.InnovationDescription
+            android:id="@+id/innovationDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:innoDesc_isTopStroke="false"
+            app:innoDesc_title="@string/publico_alvo"
+            app:innoDesc_description="@string/loren_text"/>
+
+        <com.unilever.julia.ui.inovacao.detailV2.component.InnovationGridProducts
+            android:id="@+id/gridProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

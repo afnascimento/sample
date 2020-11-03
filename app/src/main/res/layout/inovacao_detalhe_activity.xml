@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_back"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:id="@+id/contentDetalheMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.unilever.julia.ui.component.JuliaInovacaoProjetoCard
+                    android:id="@+id/inovacaoDetProjetoCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="32dp"/>
+
+            <include layout="@layout/inovacao_detalhe_beneficio"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+            <!--
+            <include layout="@layout/inovacao_detalhe_content_items"
+                     android:id="@+id/contentTop"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+            <include layout="@layout/inovacao_detalhe_button_content"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+            <include layout="@layout/inovacao_detalhe_content_items"
+                     android:id="@+id/contentTop"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+                     -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

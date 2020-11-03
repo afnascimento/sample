@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:gravity="center_horizontal">
+
+    <com.unilever.julia.components.JuliaTextViewIcon
+            android:id="@+id/topIconRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            app:julTextViewIcon="LOJA"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_top_title1"
+            android:id="@+id/tvTitleTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/clientes"
+            android:layout_toEndOf="@+id/topIconRight"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/status_pedido_carteira_card_top_title2"
+            android:id="@+id/tvTitleQtdClientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/num_clientes"
+            android:layout_toEndOf="@+id/topIconRight"
+            android:layout_below="@+id/tvTitleTopRight"/>
+
+</RelativeLayout>

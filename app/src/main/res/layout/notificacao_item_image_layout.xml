@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/margin_start_32dp"
+    android:paddingEnd="@dimen/margin_end_32dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/contentLoad"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="#F4F4F4">
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:matProg_barColor="@color/colorPrimary"
+            app:matProg_barWidth="5dp"
+            app:matProg_circleRadius="50dp"
+            app:matProg_progressIndeterminate="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="@dimen/padding_start"
+        android:layout_marginEnd="@dimen/padding_end"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/colorWhite"
+                  android:paddingTop="17dp"
+                  android:paddingBottom="17dp"
+                  android:paddingStart="24dp"
+                  android:paddingEnd="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitulo"
+                android:text="@string/reunicao_pao_acucar"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextCinza"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnEdit"
+                app:layout_constraintBottom_toBottomOf="@+id/btnEdit"/>
+
+        <include layout="@layout/button_round_edit_gray"
+                 android:id="@+id/btnEdit"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:textSize="14sp"
+                android:textColor="@color/filtro_cinza_text"
+                app:julTextViewIcon="CALENDARIO"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/juliaTextViewIcon2"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvData"
+                android:text="19/03/2019 - 19/03/2019"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextCinza"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/juliaTextViewIcon2"
+                app:layout_constraintTop_toTopOf="@+id/juliaTextViewIcon2"
+                app:layout_constraintBottom_toBottomOf="@+id/juliaTextViewIcon2"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:id="@+id/juliaTextViewIcon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="@color/filtro_cinza_text"
+                app:julTextViewIcon="HORARIO"
+                app:layout_constraintTop_toBottomOf="@+id/juliaTextViewIcon2"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHorario"
+                android:text="10:30 - 11:30"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextCinza"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/juliaTextViewIcon3"
+                app:layout_constraintTop_toTopOf="@+id/juliaTextViewIcon3"
+                app:layout_constraintBottom_toBottomOf="@+id/juliaTextViewIcon3"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:id="@+id/iconParticipantes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="@color/filtro_cinza_text"
+                app:julTextViewIcon="USUARIO"
+                app:layout_constraintTop_toBottomOf="@+id/juliaTextViewIcon3"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvParticipantes"
+                android:text="andre.nascimento@unilever.com...+2"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextCinza"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/iconParticipantes"
+                app:layout_constraintTop_toTopOf="@+id/iconParticipantes"
+                app:layout_constraintBottom_toBottomOf="@+id/iconParticipantes"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.unilever.julia.components.JuliaTextViewIcon
+                android:id="@+id/iconLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textColor="@color/filtro_cinza_text"
+                app:julTextViewIcon="CLIENTE"
+                app:layout_constraintTop_toBottomOf="@+id/iconParticipantes"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocal"
+                android:text="Prédio Rochaverá"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextCinza"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/iconLocal"
+                app:layout_constraintTop_toTopOf="@+id/iconLocal"
+                app:layout_constraintBottom_toBottomOf="@+id/iconLocal"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

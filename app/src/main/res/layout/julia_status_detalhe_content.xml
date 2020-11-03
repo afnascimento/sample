@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorChatBg">
+
+    <include layout="@layout/julia_status_detalhe_busca"
+             android:id="@+id/contentBusca"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/busca_height"
+             android:layout_marginTop="24dp"
+             android:layout_marginStart="@dimen/padding_start"
+             android:layout_marginEnd="@dimen/padding_end"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcviewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+
+    <!--
+
+    <com.unilever.julia.ui.component.JuliaStatusCard
+            android:id="@+id/juliaStatusCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <include layout="@layout/julia_status_detalhe_card_item_v3_top"/>
+
+        <include layout="@layout/julia_status_detalhe_card_item_v3_middle"/>
+
+        <include layout="@layout/julia_status_detalhe_card_item_v3_middle"/>
+
+        <include layout="@layout/julia_status_detalhe_card_item_v3_bottom"/>
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>
